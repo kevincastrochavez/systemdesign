@@ -4,6 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { COLORS } from '../../utils/constants';
+import { TestimonialCardProps } from '../../utils/types';
 
 const mainContainerCss = css`
   display: grid;
@@ -62,16 +63,6 @@ const cardHeaderCss = css`
     font-size: 14px;
   }
 `;
-
-interface TestimonialCardProps {
-  image: {
-    srcImg: string;
-    alt: string;
-  };
-  title: string;
-  username: string;
-  text: string;
-}
 
 /**
  * TestimonialCard component
