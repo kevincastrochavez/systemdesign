@@ -63,6 +63,16 @@ const cardHeaderCss = css`
   }
 `;
 
+interface TestimonialCardProps {
+  image: {
+    srcImg: string;
+    alt: string;
+  };
+  title: string;
+  username: string;
+  text: string;
+}
+
 /**
  * TestimonialCard component
  * @param {Object: {srcImg: String, alt: String}} image - image source and alt text
@@ -71,7 +81,12 @@ const cardHeaderCss = css`
  * @param {String} text - text of the card
  * @returns {JSX.Element}
  */
-function TestimonialCard({ image: { srcImg, alt }, title, username, text }) {
+function TestimonialCard({
+  image: { srcImg, alt },
+  title,
+  username,
+  text,
+}: TestimonialCardProps) {
   return (
     <div css={mainContainerCss}>
       <div css={cardContainerCss}>
