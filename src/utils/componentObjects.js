@@ -5,9 +5,9 @@ const testimonialCardProps = {
     srcImg: picture,
     alt: 'Kevin Castro at the Sand Dunes',
   },
-  title: 'Kevin Castro',
+  title: 'Kevin Castro Chavez Juan Francisco',
   username: '@kevincastro',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 };
 
 export { testimonialCardProps };

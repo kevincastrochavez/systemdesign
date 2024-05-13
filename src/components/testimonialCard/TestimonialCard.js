@@ -10,7 +10,7 @@ const mainContainerCss = css`
   padding: 16px;
 `;
 
-const testimonialCardContainerCss = css`
+const cardContainerCss = css`
   width: 100%;
   max-width: 340px;
   padding: 24px;
@@ -28,20 +28,36 @@ const testimonialCardContainerCss = css`
     border-radius: 50%;
   }
 
+  & p {
+    grid-column: 1 / -1;
+    color: ${COLORS.secondaryText};
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+  }
+`;
+
+const cardHeaderCss = css`
+  &:not([has-username='true']) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   & h3 {
     font-size: 18px;
     font-weight: semibold;
     line-height: 28px;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   & span {
     color: ${COLORS.secondaryText};
     font-size: 14px;
-  }
-
-  & p {
-    grid-column: 1 / -1;
-    color: ${COLORS.secondaryText};
   }
 `;
 
@@ -56,9 +72,9 @@ const testimonialCardContainerCss = css`
 function TestimonialCard({ image: { srcImg, alt }, title, username, text }) {
   return (
     <div css={mainContainerCss}>
-      <div css={testimonialCardContainerCss}>
-        <img src={srcImg} alt={alt} />
-        <div>
+      <div css={cardContainerCss}>
+        {srcImg && <img src={srcImg} alt={alt} />}
+        <div has-username={username} css={cardHeaderCss}>
           <h3>{title}</h3>
           <span>{username}</span>
         </div>
