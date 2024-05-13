@@ -1,5 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { COLORS } from '../../utils/constants';
 
@@ -73,7 +75,10 @@ function TestimonialCard({ image: { srcImg, alt }, title, username, text }) {
   return (
     <div css={mainContainerCss}>
       <div css={cardContainerCss}>
-        {srcImg && <img src={srcImg} alt={alt} />}
+        {srcImg && (
+          <LazyLoadImage src={srcImg} alt={alt} width={'100%'} effect='blur' />
+        )}
+
         <div has-username={username} css={cardHeaderCss}>
           <h3>{title}</h3>
           <span>{username}</span>
