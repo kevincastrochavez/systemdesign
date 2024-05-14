@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface TestimonialCardProps {
   /**
    * Image source and alt text
@@ -18,4 +20,23 @@ export interface TestimonialCardProps {
    * Text of the card
    */
   text: string;
+}
+
+export interface MoreButtonProps {
+  /**
+   * Link to be redirected to
+   */
+  to: string;
+  /**
+   * Text to be displayed
+   */
+  text: string;
+  /**
+   * Icon to be displayed
+   */
+  icon?: ReactNode;
+  /**
+   * Whether the button is disabled
+   */
+  disabled?: boolean;
 }
