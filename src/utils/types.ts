@@ -40,3 +40,10 @@ export interface MoreButtonProps {
    */
   disabled?: boolean;
 }
+
+export interface ChipProps {
+  /**
+   * Text to be displayed
+   */
+  text: string;
+}
