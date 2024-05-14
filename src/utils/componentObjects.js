@@ -18,4 +18,8 @@ const moreButtonProps = {
   icon: <IconArrowRight />,
 };
 
-export { testimonialCardProps, moreButtonProps };
+const chipProps = {
+  text: 'Interior',
+};
+
+export { testimonialCardProps, moreButtonProps, chipProps };
