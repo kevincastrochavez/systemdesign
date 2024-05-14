@@ -1,5 +1,7 @@
 import picture from '../assets/kevin.jpg';
 
+import { IconArrowRight } from '@tabler/icons-react';
+
 const testimonialCardProps = {
   image: {
     srcImg: picture,
@@ -10,4 +12,10 @@ const testimonialCardProps = {
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 };
 
-export { testimonialCardProps };
+const moreButtonProps = {
+  to: '/someLink',
+  text: 'Read More',
+  icon: <IconArrowRight />,
+};
+
+export { testimonialCardProps, moreButtonProps };
