@@ -2,7 +2,12 @@ import type { Meta } from '@storybook/react';
 
 import TestimonialCard from './TestimonialCard';
 import { TestimonialCardProps } from '../../utils/types';
-import { testimonialCardComplete } from '../__mocks__/testimonialCardMocks';
+import {
+  testimonialCardComplete,
+  testimonialCardWithoutImage,
+  testimonialCardWithoutUsername,
+  testimonialCardTooLongTitle,
+} from '../__mocks__/testimonialCardMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof TestimonialCard> = {
@@ -21,4 +26,25 @@ export const Basic = (args: TestimonialCardProps) => (
 );
 Basic.args = {
   ...testimonialCardComplete,
+};
+
+export const NoImage = (args: TestimonialCardProps) => (
+  <TestimonialCard {...args} />
+);
+NoImage.args = {
+  ...testimonialCardWithoutImage,
+};
+
+export const NoUserName = (args: TestimonialCardProps) => (
+  <TestimonialCard {...args} />
+);
+NoUserName.args = {
+  ...testimonialCardWithoutUsername,
+};
+
+export const TooLongTitle = (args: TestimonialCardProps) => (
+  <TestimonialCard {...args} />
+);
+TooLongTitle.args = {
+  ...testimonialCardTooLongTitle,
 };

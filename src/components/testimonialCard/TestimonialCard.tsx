@@ -69,6 +69,7 @@ const cardHeaderCss = css`
  * @param {String} text - text of the card
  * @returns {JSX.Element}
  */
+/** Primary UI component for Testimonial Card */
 function TestimonialCard({
   image,
   title,

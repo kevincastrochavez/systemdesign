@@ -25,8 +25,19 @@ const testimonialCardWithoutUsername = {
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 };
 
+const testimonialCardTooLongTitle = {
+  image: {
+    srcImg: picture,
+    alt: 'Kevin Castro at the Sand Dunes',
+  },
+  username: '@kevincastro',
+  title: 'Kevin Castro Chavez Being Way Too Long',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+};
+
 export {
   testimonialCardComplete,
   testimonialCardWithoutImage,
   testimonialCardWithoutUsername,
+  testimonialCardTooLongTitle,
 };
