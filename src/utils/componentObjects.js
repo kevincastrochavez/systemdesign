@@ -32,7 +32,7 @@ const blogCardProps = {
   ctaText: 'Read More',
   ctaLink: '/someLink',
   ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room', 'Interior', 'Living Room'],
+  chips: ['Interior', 'Living Room'],
 };
 
 export { testimonialCardProps, moreButtonProps, chipProps, blogCardProps };
