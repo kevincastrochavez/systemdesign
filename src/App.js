@@ -1,16 +1,12 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
-import TestimonialCard from './components/testimonialCard/TestimonialCard';
-import { testimonialCardProps } from './utils/componentObjects';
+import TestimonialCardWrapper from './components/testimonialCard/TestimonialCardWrapper';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path='/testimonialCard'
-          element={<TestimonialCard {...testimonialCardProps} />}
-        />
+        <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
       </Routes>
     </BrowserRouter>
   );
