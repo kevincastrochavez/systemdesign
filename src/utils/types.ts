@@ -1,9 +1,9 @@
 export interface TestimonialCardProps {
-  image: {
+  image?: {
     srcImg: string;
     alt: string;
   };
   title: string;
-  username: string;
+  username?: string;
   text: string;
 }
