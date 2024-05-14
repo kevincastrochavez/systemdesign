@@ -12,6 +12,7 @@ const blogCardContainerCss = css`
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow: hidden;
+  font-family: sans-serif;
 
   & img {
     width: 100%;
@@ -20,6 +21,9 @@ const blogCardContainerCss = css`
   }
 
   & ul {
+    margin: 0;
+    padding-left: 0;
+    height: 22px;
     display: flex;
     gap: 8px;
     flex-wrap: nowrap;
@@ -34,6 +38,7 @@ const blogCardContainerCss = css`
 
   & li {
     flex: none;
+    margin-top: 1px;
   }
 
   & h3 {
@@ -44,6 +49,7 @@ const blogCardContainerCss = css`
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     display: -webkit-box;
+    margin: 0;
   }
 
   & p {
