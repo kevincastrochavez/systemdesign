@@ -23,8 +23,9 @@ const blogCardContainerCss = css`
   & ul {
     margin: 0;
     padding-left: 0;
-    height: 22px;
+    height: 23px;
     display: flex;
+    align-items: center;
     gap: 8px;
     flex-wrap: nowrap;
     margin-bottom: 8px;
@@ -38,7 +39,6 @@ const blogCardContainerCss = css`
 
   & li {
     flex: none;
-    margin-top: 1px;
   }
 
   & h3 {
