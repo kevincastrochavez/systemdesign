@@ -73,11 +73,13 @@ const cardHeaderCss = css`
  * @returns {JSX.Element}
  */
 function TestimonialCard({
-  image: { srcImg, alt },
+  image,
   title,
   username,
   text,
 }: TestimonialCardProps) {
+  const { srcImg, alt } = image || {};
+
   return (
     <div css={mainContainerCss}>
       <div css={cardContainerCss}>
@@ -87,7 +89,7 @@ function TestimonialCard({
 
         <div has-username={username} css={cardHeaderCss}>
           <h3>{title}</h3>
-          <span>{username}</span>
+          {username && <span>{username}</span>}
         </div>
         <p>{text}</p>
       </div>
