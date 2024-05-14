@@ -8,7 +8,6 @@ const mainContainerCss = css`
   display: grid;
   place-items: center;
   margin-top: 200px;
-  padding: 16px;
 `;
 
 function TestimonialCardWrapper() {

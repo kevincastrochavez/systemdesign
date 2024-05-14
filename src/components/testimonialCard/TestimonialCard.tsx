@@ -34,6 +34,7 @@ const cardContainerCss = css`
     -webkit-line-clamp: 4;
     display: -webkit-box;
     margin: 0;
+    line-height: 24px;
   }
 `;
 
@@ -58,6 +59,7 @@ const cardHeaderCss = css`
   & span {
     color: ${COLORS.secondaryText};
     font-size: 14px;
+    line-height: 20px;
   }
 `;
 
