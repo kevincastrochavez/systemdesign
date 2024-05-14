@@ -6,25 +6,20 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { COLORS } from '../../utils/constants';
 import { TestimonialCardProps } from '../../utils/types';
 
-const mainContainerCss = css`
-  display: grid;
-  place-items: center;
-  margin-top: 200px;
-  padding: 16px;
-`;
-
 const cardContainerCss = css`
   width: 100%;
   max-width: 340px;
   padding: 24px;
   border-radius: 8px;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
+  font-family: sans-serif;
 
   & img {
     width: 48px;
@@ -38,6 +33,7 @@ const cardContainerCss = css`
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     display: -webkit-box;
+    margin: 0;
   }
 `;
 
@@ -56,6 +52,7 @@ const cardHeaderCss = css`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0;
   }
 
   & span {
@@ -81,18 +78,16 @@ function TestimonialCard({
   const { srcImg, alt } = image || {};
 
   return (
-    <div css={mainContainerCss}>
-      <div css={cardContainerCss}>
-        {srcImg && (
-          <LazyLoadImage src={srcImg} alt={alt} width={'100%'} effect='blur' />
-        )}
+    <div css={cardContainerCss}>
+      {srcImg && (
+        <LazyLoadImage src={srcImg} alt={alt} width={'100%'} effect='blur' />
+      )}
 
-        <div has-username={username} css={cardHeaderCss}>
-          <h3>{title}</h3>
-          {username && <span>{username}</span>}
-        </div>
-        <p>{text}</p>
+      <div has-username={username} css={cardHeaderCss}>
+        <h3>{title}</h3>
+        {username && <span>{username}</span>}
       </div>
+      <p>{text}</p>
     </div>
   );
 }
