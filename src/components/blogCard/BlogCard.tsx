@@ -1,5 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { BlogCardProps } from '../../utils/types';
 import { COLORS } from '../../utils/constants';
@@ -92,7 +94,14 @@ function BlogCard({
 }: BlogCardProps) {
   return (
     <div css={blogCardContainerCss}>
-      {image && <img src={image} alt={imageAlt} />}
+      {image && (
+        <LazyLoadImage
+          src={image}
+          alt={imageAlt}
+          width={'100%'}
+          effect='blur'
+        />
+      )}
 
       <div css={cardInfoContainerCss}>
         {chips && chips.length > 0 && (
