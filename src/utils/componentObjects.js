@@ -1,4 +1,5 @@
 import picture from '../assets/kevin.jpg';
+import homePicture from '../assets/home.jpg';
 
 import { IconArrowRight } from '@tabler/icons-react';
 
@@ -22,4 +23,16 @@ const chipProps = {
   text: 'Interior',
 };
 
-export { testimonialCardProps, moreButtonProps, chipProps };
+const blogCardProps = {
+  image: homePicture,
+  imageAlt: 'Living Room Inspiration',
+  title: 'Top 5 Living Room Inspirations.',
+  description:
+    'Curated vibrants colors for your living, make it pop & calm in the same time.',
+  ctaText: 'Read More',
+  ctaLink: '/someLink',
+  ctaIcon: <IconArrowRight />,
+  chips: ['Interior', 'Living Room', 'Interior', 'Living Room'],
+};
+
+export { testimonialCardProps, moreButtonProps, chipProps, blogCardProps };
