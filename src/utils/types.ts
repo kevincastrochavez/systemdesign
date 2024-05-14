@@ -47,3 +47,38 @@ export interface ChipProps {
    */
   text: string;
 }
+
+export interface BlogCardProps {
+  /**
+   * Image to be displayed
+   */
+  image?: string;
+  /**
+   * Image alt text
+   */
+  imageAlt?: string;
+  /**
+   * Text to be displayed
+   */
+  title: string;
+  /**
+   * Description for the card
+   */
+  description: string;
+  /**
+   * Text for the Call to Action
+   */
+  ctaText: string;
+  /**
+   * Link to be redirected to for the Call to Action
+   */
+  ctaLink: string;
+  /**
+   * Icon for the Call to Action
+   */
+  ctaIcon: ReactNode;
+  /**
+   * Chips for the Call to Action
+   */
+  chips?: string[];
+}
