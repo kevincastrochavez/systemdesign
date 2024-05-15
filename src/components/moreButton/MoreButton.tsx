@@ -64,7 +64,7 @@ const linkCss = css`
 
 const disabledLinkCss = css`
   pointer-events: none;
-  color: ${COLORS.disabledText};
+  color: ${COLORS.disabledText} !important;
 `;
 
 /**

@@ -13,6 +13,12 @@ const meta: Meta<typeof MoreButton> = {
   title: 'Components/MoreButton',
   component: MoreButton,
   decorators: [withRouter],
+  argTypes: {
+    color: {
+      options: ['green', 'indigo', 'orange', 'cyan'],
+      control: { type: 'select' },
+    },
+  },
   parameters: {
     layout: 'centered',
   },
