@@ -8,6 +8,12 @@ import { chipDefault, chipLong } from '../__mocks__/chipMocks';
 const meta: Meta<typeof Chip> = {
   title: 'Components/Chip',
   component: Chip,
+  argTypes: {
+    color: {
+      options: ['green', 'indigo', 'orange', 'cyan'],
+      control: { type: 'select' },
+    },
+  },
   parameters: {
     layout: 'centered',
   },
