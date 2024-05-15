@@ -82,6 +82,10 @@ export interface MoreButtonProps {
    * Whether the button is disabled
    */
   disabled?: boolean;
+  /**
+   * Color of the button
+   */
+  color?: string;
 }
 
 export interface TestimonialCardProps {
