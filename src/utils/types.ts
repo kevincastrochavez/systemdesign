@@ -59,6 +59,10 @@ export interface ChipProps {
    * Text to be displayed
    */
   text: string;
+  /**
+   *
+   */
+  color?: string;
 }
 
 export interface MoreButtonProps {
