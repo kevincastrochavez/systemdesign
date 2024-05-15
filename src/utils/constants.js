@@ -6,6 +6,7 @@ const COLORS = {
   green700: '#15803D',
   green200: '#BBF7D0',
   green50: '#F0FDF4',
+  grayBackground: '#858e96',
 };
 
 export { COLORS };

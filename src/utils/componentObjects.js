@@ -35,4 +35,17 @@ const blogCardProps = {
   chips: ['Interior', 'Living Room'],
 };
 
-export { testimonialCardProps, moreButtonProps, chipProps, blogCardProps };
+const avatarProps = {
+  src: picture,
+  alt: 'Kevin Castro at the Sand Dunes',
+  size: 'md',
+  radius: 'full',
+};
+
+export {
+  testimonialCardProps,
+  moreButtonProps,
+  chipProps,
+  blogCardProps,
+  avatarProps,
+};
