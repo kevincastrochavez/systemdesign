@@ -4,6 +4,7 @@ import TestimonialCardWrapper from './components/testimonialCard/TestimonialCard
 import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
 import ChipWrapper from './components/chip/ChipWrapper';
 import BlogCardWrapper from './components/blogCard/BlogCardWrapper';
+import AvatarWrapper from './components/avatar/AvatarWrapper';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
         <Route path='/chip' element={<ChipWrapper />} />
         <Route path='/blogCard' element={<BlogCardWrapper />} />
+        <Route path='/avatar' element={<AvatarWrapper />} />
       </Routes>
     </BrowserRouter>
   );
