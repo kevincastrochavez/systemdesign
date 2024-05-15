@@ -1,51 +1,22 @@
 import { ReactNode } from 'react';
 
-export interface TestimonialCardProps {
+export interface AvatarProps {
   /**
-   * Image source and alt text
+   * Image to be displayed
    */
-  image?: {
-    srcImg: string;
-    alt: string;
-  };
+  src?: string;
   /**
-   * Title of the card
+   * Image alt text
    */
-  title: string;
+  alt?: string;
   /**
-   * Username of the card
+   * Radius of the avatar
    */
-  username?: string;
+  radius?: string;
   /**
-   * Text of the card
+   * Size of the avatar
    */
-  text: string;
-}
-
-export interface MoreButtonProps {
-  /**
-   * Link to be redirected to
-   */
-  to: string;
-  /**
-   * Text to be displayed
-   */
-  text: string;
-  /**
-   * Icon to be displayed
-   */
-  icon?: ReactNode;
-  /**
-   * Whether the button is disabled
-   */
-  disabled?: boolean;
-}
-
-export interface ChipProps {
-  /**
-   * Text to be displayed
-   */
-  text: string;
+  size?: string;
 }
 
 export interface BlogCardProps {
@@ -81,4 +52,52 @@ export interface BlogCardProps {
    * Chips for the Call to Action
    */
   chips?: string[];
+}
+
+export interface ChipProps {
+  /**
+   * Text to be displayed
+   */
+  text: string;
+}
+
+export interface MoreButtonProps {
+  /**
+   * Link to be redirected to
+   */
+  to: string;
+  /**
+   * Text to be displayed
+   */
+  text: string;
+  /**
+   * Icon to be displayed
+   */
+  icon?: ReactNode;
+  /**
+   * Whether the button is disabled
+   */
+  disabled?: boolean;
+}
+
+export interface TestimonialCardProps {
+  /**
+   * Image source and alt text
+   */
+  image?: {
+    srcImg: string;
+    alt: string;
+  };
+  /**
+   * Title of the card
+   */
+  title: string;
+  /**
+   * Username of the card
+   */
+  username?: string;
+  /**
+   * Text of the card
+   */
+  text: string;
 }
