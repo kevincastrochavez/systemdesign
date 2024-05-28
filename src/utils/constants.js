@@ -2,6 +2,7 @@ const COLORS = {
   secondaryText: '#525252',
   disabledText: '#A3A3A3',
   grayBackground: '#858e96',
+  grayBackgroundDisabled: '#e5e7eb',
   grayHover: '#f8f9fa',
   grayBorder: '#dee2e6',
   indigo800: '#3730A3',

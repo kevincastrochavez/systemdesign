@@ -39,9 +39,12 @@ const buttonCss = css`
 
   &[data-variant='filled'] {
     color: white !important;
+    border: none !important;
   }
 
   &[data-variant='light'] {
+    border: none !important;
+
     &[data-color='indigo'] {
       background: ${COLORS.indigo50} !important;
     }
@@ -176,37 +179,39 @@ const buttonCss = css`
   &[data-radius='full'] {
     border-radius: 100px;
   }
-`;
 
-const disabledButtonCss = css`
-  pointer-events: none;
-  color: ${COLORS.disabledText} !important;
+  &[disabled] {
+    pointer-events: none;
+    color: ${COLORS.disabledText} !important;
+    background: ${COLORS.grayBackgroundDisabled} !important;
+    border: 1px solid transparent !important;
+  }
 `;
 
 /**
  * Button component
  * @param {Function} onclick - function to be called on click
  * @param {String} text - text to be displayed
- * @param {ReactNode} icon - icon to be displayed
- * @param {String} iconPosition - position of the icon ('left' | 'right')
  * @param {String} variant - variant of the button ('default' | 'filled' | 'light' | 'outline')
  * @param {String} color - color of the button ('green' | 'indigo' | 'orange' | 'cyan')
  * @param {String} size - size of the button ('sm' | 'md' | 'lg' | 'xl')
  * @param {String} radius - radius of the button ('sm' | 'md' | 'lg' | 'full')
  * @param {Boolean} disabled - whether the button is disabled
+ * @param {String} iconPosition - position of the icon ('left' | 'right')
+ * @param {ReactNode} icon - icon to be displayed
  * @returns {JSX.Element}
  */
 /** Primary UI component for the Button component */
 function Button({
   onclick,
   text,
-  icon,
-  iconPosition = 'right',
   variant = 'default',
   color = 'indigo',
   size = 'sm',
   radius = 'sm',
   disabled = false,
+  iconPosition = 'right',
+  icon,
 }: ButtonProps) {
   return (
     <button
@@ -216,7 +221,7 @@ function Button({
       data-color={color}
       data-size={size}
       data-radius={radius}
-      css={[buttonCss, disabled && disabledButtonCss]}
+      css={buttonCss}
       disabled={disabled}
     >
       {text} {icon && icon}

@@ -1,7 +1,7 @@
+import { IconArrowRight } from '@tabler/icons-react';
+
 import picture from '../assets/kevin.jpg';
 import homePicture from '../assets/home.jpg';
-
-import { IconArrowRight } from '@tabler/icons-react';
 
 const testimonialCardProps = {
   image: {
@@ -45,13 +45,13 @@ const avatarProps = {
 const buttonProps = {
   onclick: () => {},
   text: 'Read More',
-  icon: <IconArrowRight />,
-  iconPosition: 'right',
   variant: 'outline',
   color: 'indigo',
   size: 'sm',
   radius: 'sm',
   disabled: false,
+  iconPosition: 'right',
+  icon: <IconArrowRight />,
 };
 
 export {

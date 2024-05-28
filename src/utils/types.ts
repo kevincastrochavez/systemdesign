@@ -64,14 +64,6 @@ export interface ButtonProps {
    */
   text: string;
   /**
-   * Icon to be displayed
-   */
-  icon?: ReactNode;
-  /**
-   * Icon position
-   */
-  iconPosition?: string;
-  /**
    * Variant of the button
    */
   variant?: string;
@@ -91,6 +83,14 @@ export interface ButtonProps {
    * Whether the button is disabled
    */
   disabled?: boolean;
+  /**
+   * Icon position
+   */
+  iconPosition?: string;
+  /**
+   * Icon to be displayed
+   */
+  icon?: ReactNode;
 }
 
 export interface ChipProps {
