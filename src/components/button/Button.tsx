@@ -217,6 +217,7 @@ function Button({
       data-size={size}
       data-radius={radius}
       css={[buttonCss, disabled && disabledButtonCss]}
+      disabled={disabled}
     >
       {text} {icon && icon}
     </button>
