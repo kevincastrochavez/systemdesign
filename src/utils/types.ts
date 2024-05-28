@@ -54,6 +54,45 @@ export interface BlogCardProps {
   chips?: string[];
 }
 
+export interface ButtonProps {
+  /**
+   * OnClick handler
+   */
+  onclick?: () => void;
+  /**
+   * Text to be displayed
+   */
+  text: string;
+  /**
+   * Icon to be displayed
+   */
+  icon?: ReactNode;
+  /**
+   * Icon position
+   */
+  iconPosition?: string;
+  /**
+   * Variant of the button
+   */
+  variant?: string;
+  /**
+   * Color of the button
+   */
+  color?: string;
+  /**
+   * Size of the button
+   */
+  size?: string;
+  /**
+   * Radius of the button
+   */
+  radius?: string;
+  /**
+   * Whether the button is disabled
+   */
+  disabled?: boolean;
+}
+
 export interface ChipProps {
   /**
    * Text to be displayed

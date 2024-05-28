@@ -42,10 +42,23 @@ const avatarProps = {
   radius: 'full',
 };
 
+const buttonProps = {
+  onclick: () => {},
+  text: 'Read More',
+  icon: <IconArrowRight />,
+  iconPosition: 'right',
+  variant: 'outline',
+  color: 'indigo',
+  size: 'sm',
+  radius: 'sm',
+  disabled: false,
+};
+
 export {
   testimonialCardProps,
   moreButtonProps,
   chipProps,
   blogCardProps,
   avatarProps,
+  buttonProps,
 };
