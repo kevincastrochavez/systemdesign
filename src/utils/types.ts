@@ -162,6 +162,29 @@ export interface MoreButtonProps {
   color?: string;
 }
 
+export interface SocialBarProps {
+  /**
+   * Action icons to be displayed
+   */
+  actionIcons: ActionIconProps[];
+  /**
+   * Color of the social bar
+   */
+  color?: string;
+  /**
+   * Size of the social bar
+   */
+  size?: string;
+  /**
+   * Width of the social bar
+   */
+  width?: string;
+  /**
+   * Separation among the icons
+   */
+  separation?: string;
+}
+
 export interface TestimonialCardProps {
   /**
    * Image source and alt text
