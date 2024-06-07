@@ -162,11 +162,38 @@ export interface MoreButtonProps {
   color?: string;
 }
 
+export interface ProfileCardProps {
+  /**
+   * Image source and alt text
+   */
+  image: AvatarProps;
+  /**
+   * Title of the card
+   */
+  title: string;
+  /**
+   * Subtitle of the card
+   */
+  subtitle: string;
+  /**
+   * Text of the card
+   */
+  text?: string;
+  /**
+   * Button text of the card
+   */
+  button: ButtonProps;
+  /**
+   * Action icons to be displayed
+   */
+  socialBar?: SocialBarProps;
+}
+
 export interface SocialBarProps {
   /**
    * Action icons to be displayed
    */
-  actionIcons: ActionIconProps[];
+  actionIcons?: ActionIconProps[];
   /**
    * Color of the social bar
    */
@@ -189,10 +216,7 @@ export interface TestimonialCardProps {
   /**
    * Image source and alt text
    */
-  image?: {
-    srcImg: string;
-    alt: string;
-  };
+  image?: AvatarProps;
   /**
    * Title of the card
    */
