@@ -1,5 +1,36 @@
 import { ReactNode } from 'react';
 
+export interface ActionIconProps {
+  /**
+   * Icon to be displayed
+   */
+  icon: ReactNode;
+  /**
+   * Color of the icon
+   */
+  color?: string;
+  /**
+   * Size of the icon
+   */
+  size?: string;
+  /**
+   * Variant of the icon
+   */
+  variant?: string;
+  /**
+   * Disabled state of the icon
+   */
+  disabled?: boolean;
+  /**
+   * Radius of the icon
+   */
+  radius?: string;
+  /**
+   * Click event handler
+   */
+  onClick?: () => void;
+}
+
 export interface AvatarProps {
   /**
    * Image to be displayed
