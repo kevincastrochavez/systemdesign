@@ -27,6 +27,7 @@ const buttonCss = css`
     flex-direction: row-reverse;
   }
 
+  /* Variants */
   &[data-variant='default'] {
     background: white !important;
     border: 1px solid ${COLORS.grayBorder} !important;
@@ -98,6 +99,7 @@ const buttonCss = css`
     }
   }
 
+  /* Colors */
   &[data-color='indigo'] {
     color: ${COLORS.indigo700};
     background: ${COLORS.indigo700};
@@ -150,6 +152,7 @@ const buttonCss = css`
     }
   }
 
+  /* Sizes */
   &[data-size='md'] {
     font-size: 16px;
     line-height: 24px;
@@ -168,6 +171,7 @@ const buttonCss = css`
     padding: 18px 28px;
   }
 
+  /* Radius */
   &[data-radius='md'] {
     border-radius: 8px;
   }
@@ -180,6 +184,7 @@ const buttonCss = css`
     border-radius: 100px;
   }
 
+  /* Width */
   &[data-width='fit-content'] {
     width: fit-content;
   }
