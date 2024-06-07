@@ -44,4 +44,17 @@ const profileCardDefault = {
   },
 };
 
-export { profileCardDefault };
+const profileCardNoSocialBar = {
+  image: {
+    src: picture,
+    alt: 'Kevin Castro at the Sand Dunes',
+  },
+  title: 'Kevin Castro',
+  subtitle: 'FrontEnd Engineer @ Tesla',
+  text: 'You will never find an engineer like me. This is your chance. Hire me now or someone else will!',
+  button: {
+    text: 'Contact Me',
+  },
+};
+
+export { profileCardDefault, profileCardNoSocialBar };

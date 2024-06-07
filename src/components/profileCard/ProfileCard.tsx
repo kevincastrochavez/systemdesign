@@ -61,8 +61,10 @@ const profileCardTitleCss = css`
 
 const profileCardBottomCss = css`
   margin-top: 40px;
-  display: grid;
-  gap: 24px;
+
+  & > div {
+    margin-top: 24px;
+  }
 `;
 
 /**
@@ -99,7 +101,7 @@ function ProfileCard({
       <div css={profileCardBottomCss}>
         <Button {...button} />
 
-        <SocialBar {...socialBar} />
+        {socialBar && <SocialBar {...socialBar} />}
       </div>
     </main>
   );
