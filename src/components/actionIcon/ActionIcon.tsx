@@ -86,6 +86,10 @@ const actionIconContainerCss = css`
         background: ${COLORS.cyan50} !important;
       }
     }
+
+    &[disabled] {
+      border: 1px solid transparent !important;
+    }
   }
 
   /* Sizes */
