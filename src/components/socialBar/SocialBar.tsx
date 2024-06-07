@@ -61,7 +61,7 @@ const socialBarIconContainerCss = css`
  */
 function SocialBar({
   actionIcons,
-  color = 'indigo',
+  color = 'cyan',
   size = 'md',
   width = 'fit-content',
   separation = 'md',

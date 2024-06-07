@@ -28,10 +28,6 @@ const socialBarDefault = {
       onClick: () => {},
     },
   ],
-  color: 'indigo',
-  size: 'md',
-  width: 'full',
-  separation: 'xl',
 };
 
 export { socialBarDefault };

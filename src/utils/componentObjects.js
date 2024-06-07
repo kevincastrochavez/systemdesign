@@ -127,10 +127,7 @@ const socialBarProps = {
       onClick: () => {},
     },
   ],
-  color: 'indigo',
-  size: 'md',
-  width: 'full',
-  separation: 'xl',
+  color: 'cyan',
 };
 
 const testimonialCardProps = {
