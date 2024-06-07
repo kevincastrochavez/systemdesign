@@ -8,6 +8,7 @@ import AvatarWrapper from './components/avatar/AvatarWrapper';
 import ButtonWrapper from './components/button/ButtonWrapper';
 import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
 import ActionIconWrapper from './components/actionIcon/ActionIconWrapper';
+import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/button' element={<ButtonWrapper />} />
         <Route path='/chip' element={<ChipWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
+        <Route path='/socialBar' element={<SocialBarWrapper />} />
         <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
       </Routes>
     </BrowserRouter>
