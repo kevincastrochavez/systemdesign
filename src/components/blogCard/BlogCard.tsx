@@ -87,9 +87,7 @@ function BlogCard({
   imageAlt,
   title,
   description,
-  ctaText,
-  ctaLink,
-  ctaIcon,
+  moreButton,
   chips,
 }: BlogCardProps) {
   return (
@@ -108,7 +106,7 @@ function BlogCard({
           <ul>
             {chips.map((chip, index) => (
               <li key={index}>
-                <Chip text={chip} />
+                <Chip {...chip} />
               </li>
             ))}
           </ul>
@@ -116,7 +114,7 @@ function BlogCard({
 
         <h3>{title}</h3>
         <p>{description}</p>
-        <MoreButton to={ctaLink} text={ctaText} icon={ctaIcon} />
+        <MoreButton {...moreButton} />
       </div>
     </div>
   );

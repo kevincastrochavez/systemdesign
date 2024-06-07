@@ -32,16 +32,26 @@ const blogCardProps = {
   title: 'Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room'],
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
+  chips: [
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+  ],
 };
 
 const buttonProps = {
   onclick: () => {},
   text: 'Read More',
-  width: 'fit-content',
   disabled: false,
   iconPosition: 'right',
   icon: <IconArrowRight />,

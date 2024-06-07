@@ -8,20 +8,42 @@ const blogCardComplete = {
   title: 'Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room'],
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
+  chips: [
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+  ],
 };
 
 const blogCardNoImage = {
   title: 'Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room'],
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
+  chips: [
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+  ],
 };
 
 const blogCardLongTitle = {
@@ -30,10 +52,21 @@ const blogCardLongTitle = {
   title: 'Top 5 Living Room Inspirations. Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room'],
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
+  chips: [
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+  ],
 };
 
 const blogCardManyChips = {
@@ -42,10 +75,29 @@ const blogCardManyChips = {
   title: 'Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room', 'Interior', 'Living Room'],
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
+  chips: [
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+  ],
 };
 
 const blogCardNoChips = {
@@ -54,9 +106,11 @@ const blogCardNoChips = {
   title: 'Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
   chips: [],
 };
 
@@ -66,10 +120,21 @@ const blogCardLongDescription = {
   title: 'Top 5 Living Room Inspirations.',
   description:
     'Curated vibrants colors for your living, make it pop & calm in the same time. Curated vibrants colors for your living, make it pop & calm in the same time.',
-  ctaText: 'Read More',
-  ctaLink: '/someLink',
-  ctaIcon: <IconArrowRight />,
-  chips: ['Interior', 'Living Room'],
+  moreButton: {
+    to: '/someLink',
+    text: 'Read More',
+    icon: <IconArrowRight />,
+  },
+  chips: [
+    {
+      text: 'Living Room',
+      color: 'green',
+    },
+    {
+      text: 'Inspiration',
+      color: 'green',
+    },
+  ],
 };
 
 export {

@@ -68,21 +68,13 @@ export interface BlogCardProps {
    */
   description: string;
   /**
-   * Text for the Call to Action
-   */
-  ctaText: string;
-  /**
-   * Link to be redirected to for the Call to Action
-   */
-  ctaLink: string;
-  /**
-   * Icon for the Call to Action
-   */
-  ctaIcon: ReactNode;
+   * More Button for the Call to Action
+   * */
+  moreButton: MoreButtonProps;
   /**
    * Chips for the Call to Action
    */
-  chips?: string[];
+  chips?: ChipProps[];
 }
 
 export interface ButtonProps {
