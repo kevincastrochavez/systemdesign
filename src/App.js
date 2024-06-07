@@ -20,6 +20,7 @@ function App() {
         <Route path='/button' element={<ButtonWrapper />} />
         <Route path='/chip' element={<ChipWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
+        <Route path='/profileCard' element={<ProfileCardWrapper />} />
         <Route path='/socialBar' element={<SocialBarWrapper />} />
         <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
       </Routes>
