@@ -224,11 +224,11 @@ const actionIconContainerCss = css`
 /** Primary UI component for the ActionIcon component */
 function ActionIcon({
   icon,
-  color = 'indigo',
-  size = 'md',
-  variant = 'default',
+  color = 'green',
+  size = 'lg',
+  variant = 'filled',
   disabled = false,
-  radius = 'md',
+  radius = 'sm',
   onClick,
 }: ActionIconProps) {
   return (

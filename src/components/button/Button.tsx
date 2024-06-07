@@ -220,9 +220,9 @@ const buttonCss = css`
 function Button({
   onclick,
   text,
-  variant = 'default',
-  color = 'indigo',
-  size = 'sm',
+  variant = 'filled',
+  color = 'cyan',
+  size = 'md',
   radius = 'sm',
   width = 'full',
   disabled = false,

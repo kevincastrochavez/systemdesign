@@ -3,10 +3,6 @@ import { IconArrowRight } from '@tabler/icons-react';
 const buttonDefault = {
   onclick: () => {},
   text: 'Click me',
-  variant: 'default',
-  color: 'indigo',
-  size: 'sm',
-  radius: 'sm',
   width: 'fit-content',
   disabled: false,
   iconPosition: 'right',

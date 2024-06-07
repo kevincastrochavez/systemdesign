@@ -81,7 +81,7 @@ function MoreButton({
   to,
   text,
   icon,
-  color = 'indigo',
+  color = 'cyan',
   disabled = false,
 }: MoreButtonProps) {
   return (

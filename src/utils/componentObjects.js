@@ -10,9 +10,9 @@ import picture from '../assets/kevin.jpg';
 import homePicture from '../assets/home.jpg';
 
 const actionIconProps = {
-  variant: 'outline',
-  color: 'indigo',
-  size: 'xl',
+  variant: 'filled',
+  color: 'cyan',
+  size: 'lg',
   radius: 'sm',
   disabled: false,
   icon: <IconBrandGithub />,
@@ -22,7 +22,7 @@ const actionIconProps = {
 const avatarProps = {
   src: picture,
   alt: 'Kevin Castro at the Sand Dunes',
-  size: 'md',
+  size: 'lg',
   radius: 'full',
 };
 
@@ -41,10 +41,6 @@ const blogCardProps = {
 const buttonProps = {
   onclick: () => {},
   text: 'Read More',
-  variant: 'outline',
-  color: 'indigo',
-  size: 'sm',
-  radius: 'sm',
   width: 'fit-content',
   disabled: false,
   iconPosition: 'right',

@@ -1,17 +1,7 @@
-import picture from '../../assets/kevin.jpg';
-
-const avatarWithImage = {
-  src: picture,
+const avatarDefault = {
   alt: 'Kevin',
-  radius: 'md',
-  size: 'md',
 };
 
-const avatarSizeLargeRadiusFull = {
-  src: picture,
-  alt: 'Kevin',
-  radius: 'full',
-  size: 'lg',
-};
+const avatarNoImage = {};
 
-export { avatarWithImage, avatarSizeLargeRadiusFull };
+export { avatarDefault, avatarNoImage };

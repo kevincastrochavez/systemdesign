@@ -3,6 +3,7 @@ import type { Meta } from '@storybook/react';
 import Avatar from './Avatar';
 import { AvatarProps } from '../../utils/types';
 import picture from '../../assets/kevin.jpg';
+import { avatarDefault, avatarNoImage } from '../__mocks__/avatarMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof Avatar> = {
@@ -32,11 +33,11 @@ export default meta;
 
 export const Basic = (args: AvatarProps) => <Avatar {...args} />;
 Basic.args = {
+  ...avatarDefault,
   src: picture,
 };
 
 export const NoImage = (args: AvatarProps) => <Avatar {...args} />;
 NoImage.args = {
-  size: 'md',
-  radius: 'md',
+  ...avatarNoImage,
 };

@@ -90,7 +90,7 @@ const avatarContainerCss = css`
  * @returns {JSX.Element}
  */
 /** Primary UI component for the Avatar component */
-function Avatar({ src, alt, radius = 'md', size = 'md' }: AvatarProps) {
+function Avatar({ src, alt, radius = 'full', size = 'lg' }: AvatarProps) {
   if (!src) {
     return (
       <div

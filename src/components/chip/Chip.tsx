@@ -42,7 +42,7 @@ const chipContainerCss = css`
  * @returns {JSX.Element}
  */
 /** Primary UI component for the Chip component */
-function Chip({ text, color = 'green' }: ChipProps) {
+function Chip({ text, color = 'cyan' }: ChipProps) {
   return (
     <span css={chipContainerCss} data-color={color}>
       {text}
