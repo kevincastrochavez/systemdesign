@@ -1,4 +1,10 @@
-import { IconArrowRight, IconBrandGithub } from '@tabler/icons-react';
+import {
+  IconArrowRight,
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandInstagram,
+  IconBrandX,
+} from '@tabler/icons-react';
 
 import picture from '../assets/kevin.jpg';
 import homePicture from '../assets/home.jpg';
@@ -55,6 +61,35 @@ const moreButtonProps = {
   icon: <IconArrowRight />,
 };
 
+const socialBarProps = {
+  actionIcons: [
+    {
+      icon: <IconBrandGithub />,
+      variant: 'transparent',
+      onClick: () => {},
+    },
+    {
+      icon: <IconBrandLinkedin />,
+      variant: 'transparent',
+      onClick: () => {},
+    },
+    {
+      icon: <IconBrandInstagram />,
+      variant: 'transparent',
+      onClick: () => {},
+    },
+    {
+      icon: <IconBrandX />,
+      variant: 'transparent',
+      onClick: () => {},
+    },
+  ],
+  color: 'indigo',
+  size: 'md',
+  width: 'full',
+  separation: 'xl',
+};
+
 const testimonialCardProps = {
   image: {
     srcImg: picture,
@@ -72,5 +107,6 @@ export {
   buttonProps,
   chipProps,
   moreButtonProps,
+  socialBarProps,
   testimonialCardProps,
 };
