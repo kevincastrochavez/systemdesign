@@ -27,6 +27,11 @@ const actionIconContainerCss = css`
     }
   }
 
+  &[data-variant='transparent'] {
+    background: transparent !important;
+    border: none !important;
+  }
+
   &[data-variant='light'] {
     border: none !important;
 
@@ -205,11 +210,11 @@ const actionIconContainerCss = css`
 /**
  * ActionIcon component
  * @param {ReactNode} icon - Icon to be displayed
- * @param {String} color - Color of the icon
- * @param {String} size - Size of the icon
- * @param {String} variant - Variant of the icon
+ * @param {String} color - Color of the icon ('indigo' | 'green' | 'orange' | 'cyan')
+ * @param {String} size - Size of the icon ('sm' | 'md' | 'lg' | 'xl')
+ * @param {String} variant - Variant of the icon ('default' | 'outline' | 'light' | 'filled' | 'transparent')
  * @param {Boolean} disabled - Whether the icon is disabled
- * @param {String} radius - Radius of the icon
+ * @param {String} radius - Radius of the icon ('sm' | 'md' | 'lg' | 'full')
  * @returns {JSX.Element}
  */
 /** Primary UI component for the ActionIcon component */

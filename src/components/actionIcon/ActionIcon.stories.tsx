@@ -10,7 +10,7 @@ const meta: Meta<typeof ActionIcon> = {
   component: ActionIcon,
   argTypes: {
     variant: {
-      options: ['default', 'filled', 'light', 'outline'],
+      options: ['default', 'filled', 'transparent', 'light', 'outline'],
       control: { type: 'select' },
     },
     color: {
