@@ -132,7 +132,7 @@ const socialBarProps = {
 
 const testimonialCardProps = {
   image: {
-    srcImg: picture,
+    src: picture,
     alt: 'Kevin Castro at the Sand Dunes',
   },
   title: 'Kevin Castro Chavez',

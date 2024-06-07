@@ -2,7 +2,7 @@ import picture from '../../assets/kevin.jpg';
 
 const testimonialCardComplete = {
   image: {
-    srcImg: picture,
+    src: picture,
     alt: 'Kevin Castro at the Sand Dunes',
   },
   title: 'Kevin Castro Chavez',
@@ -18,7 +18,7 @@ const testimonialCardWithoutImage = {
 
 const testimonialCardWithoutUsername = {
   image: {
-    srcImg: picture,
+    src: picture,
     alt: 'Kevin Castro at the Sand Dunes',
   },
   title: 'Kevin Castro Chavez',
@@ -27,7 +27,7 @@ const testimonialCardWithoutUsername = {
 
 const testimonialCardTooLongTitle = {
   image: {
-    srcImg: picture,
+    src: picture,
     alt: 'Kevin Castro at the Sand Dunes',
   },
   username: '@kevincastro',

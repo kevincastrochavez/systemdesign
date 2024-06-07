@@ -1,10 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { COLORS } from '../../utils/constants';
 import { TestimonialCardProps } from '../../utils/types';
+import Avatar from '../avatar/Avatar';
 
 const cardContainerCss = css`
   width: 100%;
@@ -78,13 +77,9 @@ function TestimonialCard({
   username,
   text,
 }: TestimonialCardProps) {
-  const { srcImg, alt } = image || {};
-
   return (
     <div css={cardContainerCss}>
-      {srcImg && (
-        <LazyLoadImage src={srcImg} alt={alt} width={'100%'} effect='blur' />
-      )}
+      <Avatar {...image} />
 
       <div has-username={username} css={cardHeaderCss}>
         <h3>{title}</h3>
