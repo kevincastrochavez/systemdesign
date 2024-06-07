@@ -73,7 +73,7 @@ function SocialBar({
       data-separation={separation}
       data-testid='social-bar'
     >
-      {actionIcons.map((actionIcon, index) => (
+      {actionIcons?.map((actionIcon, index) => (
         <div data-size={size} css={socialBarIconContainerCss}>
           <ActionIcon {...actionIcon} key={index} color={color} size={size} />
         </div>
