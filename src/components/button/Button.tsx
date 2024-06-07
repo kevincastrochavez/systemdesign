@@ -180,6 +180,15 @@ const buttonCss = css`
     border-radius: 100px;
   }
 
+  &[data-width='fit-content'] {
+    width: fit-content;
+  }
+
+  &[data-width='full'] {
+    width: 100%;
+    max-width: 320px;
+  }
+
   &[disabled] {
     pointer-events: none;
     color: ${COLORS.disabledText} !important;
@@ -196,6 +205,7 @@ const buttonCss = css`
  * @param {String} color - color of the button ('green' | 'indigo' | 'orange' | 'cyan')
  * @param {String} size - size of the button ('sm' | 'md' | 'lg' | 'xl')
  * @param {String} radius - radius of the button ('sm' | 'md' | 'lg' | 'full')
+ * @param {String} width - width of the button ('fit-content' | 'full')
  * @param {Boolean} disabled - whether the button is disabled
  * @param {String} iconPosition - position of the icon ('left' | 'right')
  * @param {ReactNode} icon - icon to be displayed
@@ -209,6 +219,7 @@ function Button({
   color = 'indigo',
   size = 'sm',
   radius = 'sm',
+  width = 'full',
   disabled = false,
   iconPosition = 'right',
   icon,
@@ -220,6 +231,7 @@ function Button({
       data-variant={variant}
       data-color={color}
       data-size={size}
+      data-width={width}
       data-radius={radius}
       css={buttonCss}
       disabled={disabled}

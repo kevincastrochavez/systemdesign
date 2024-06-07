@@ -49,6 +49,7 @@ const buttonProps = {
   color: 'indigo',
   size: 'sm',
   radius: 'sm',
+  width: 'fit-content',
   disabled: false,
   iconPosition: 'right',
   icon: <IconArrowRight />,

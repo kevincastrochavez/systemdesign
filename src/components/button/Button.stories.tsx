@@ -34,6 +34,10 @@ const meta: Meta<typeof Button> = {
       options: ['sm', 'md', 'lg', 'full'],
       control: { type: 'select' },
     },
+    width: {
+      options: ['fit-content', 'full'],
+      control: { type: 'select' },
+    },
   },
   parameters: {
     layout: 'centered',

@@ -80,6 +80,10 @@ export interface ButtonProps {
    */
   radius?: string;
   /**
+   * Width of the button
+   */
+  width?: string;
+  /**
    * Whether the button is disabled
    */
   disabled?: boolean;
