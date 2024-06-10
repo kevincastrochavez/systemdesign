@@ -4,6 +4,7 @@ import {
   IconBrandLinkedin,
   IconBrandInstagram,
   IconBrandX,
+  IconMail,
 } from '@tabler/icons-react';
 
 import picture from '../assets/kevin.jpg';
@@ -59,6 +60,15 @@ const buttonProps = {
 
 const chipProps = {
   text: 'Interior',
+};
+
+const inputTextProps = {
+  labelText: 'Email',
+  leftIcon: <IconMail />,
+  placeholder: 'Placeholder',
+  type: 'password',
+  pattern: '^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$',
+  hint: 'Hint',
 };
 
 const moreButtonProps = {
@@ -146,6 +156,7 @@ export {
   blogCardProps,
   buttonProps,
   chipProps,
+  inputTextProps,
   moreButtonProps,
   profileCardProps,
   socialBarProps,

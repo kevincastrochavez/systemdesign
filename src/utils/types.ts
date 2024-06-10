@@ -131,6 +131,41 @@ export interface ChipProps {
   color?: string;
 }
 
+export interface InputProps {
+  /**
+   * Text to be displayed in the label
+   */
+  labelText: string;
+  /**
+   * Left icon to be displayed, if any
+   */
+  leftIcon?: ReactNode;
+  /**
+   * Placeholder of the input
+   */
+  placeholder?: string;
+  /**
+   * Type of the input
+   */
+  type?: string;
+  /**
+   * Pattern of the input
+   */
+  pattern?: string;
+  /**
+   * Hint of the input
+   */
+  hint?: string;
+  /**
+   * Error message of the input
+   */
+  errorMessage?: string;
+  /**
+   * Whether the input is disabled
+   */
+  disabled?: boolean;
+}
+
 export interface MoreButtonProps {
   /**
    * Link to be redirected to

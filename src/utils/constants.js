@@ -25,6 +25,11 @@ const COLORS = {
   cyan200: '#a5f3fc',
   cyan100: '#cffafe',
   cyan50: '#ecfeff',
+  neutral50: '#fafafa',
+  neutral200: '#e5e5e5',
+  neutral500: '#737373',
+  inputFocus: '#444CE7',
+  red600: '#dc2626',
 };
 
 export { COLORS };
