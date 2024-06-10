@@ -86,7 +86,7 @@ function ProfileCard({
   socialBar,
 }: ProfileCardProps) {
   return (
-    <main css={profileCardContainerCss}>
+    <div css={profileCardContainerCss}>
       <div css={profileCardTopCss}>
         <Avatar size='xl' radius='full' {...image} />
 
@@ -103,7 +103,7 @@ function ProfileCard({
 
         {socialBar && <SocialBar {...socialBar} />}
       </div>
-    </main>
+    </div>
   );
 }
 
