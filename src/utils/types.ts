@@ -257,3 +257,25 @@ export interface TestimonialCardProps {
    */
   text: string;
 }
+
+export interface NavBarProps {
+  /**
+   * Logo source and alt text
+   */
+  logoInfo: {
+    src: string;
+    alt: string;
+  };
+  /**
+   * Links to be displayed
+   */
+  links: { text: string; to: string }[];
+  /**
+   * Buttons to be displayed on desktop
+   */
+  buttonsDesktop: ButtonProps[];
+  /**
+   * Buttons to be displayed on mobile
+   */
+  buttonsMobile: ButtonProps[];
+}

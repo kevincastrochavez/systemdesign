@@ -9,6 +9,7 @@ import {
 
 import picture from '../assets/kevin.jpg';
 import homePicture from '../assets/home.jpg';
+import navBarLogo from '../assets/Logo.png';
 
 const actionIconProps = {
   variant: 'filled',
@@ -150,6 +151,61 @@ const testimonialCardProps = {
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 };
 
+const navBarProps = {
+  logoInfo: {
+    src: navBarLogo,
+    alt: 'Abstractly logo, featuring the letter A as the main letter',
+  },
+  links: [
+    {
+      text: 'Home',
+      to: '/home',
+    },
+    {
+      text: 'Features',
+      to: '/features',
+    },
+    {
+      text: 'Pricing',
+      to: '/pricing',
+    },
+    {
+      text: 'About us',
+      to: '/aboutus',
+    },
+    {
+      text: 'Contact',
+      to: '/contact',
+    },
+  ],
+  buttonsDesktop: [
+    {
+      text: 'Learn more',
+      variant: 'default',
+      size: 'sm',
+      width: 'fit-content',
+    },
+    {
+      text: 'Try it out',
+      color: 'indigo',
+      size: 'sm',
+      width: 'fit-content',
+    },
+  ],
+  buttonsMobile: [
+    {
+      text: 'Learn more',
+      variant: 'default',
+      size: 'sm',
+    },
+    {
+      text: 'Try it out',
+      color: 'indigo',
+      size: 'sm',
+    },
+  ],
+};
+
 export {
   actionIconProps,
   avatarProps,
@@ -161,4 +217,5 @@ export {
   profileCardProps,
   socialBarProps,
   testimonialCardProps,
+  navBarProps,
 };
