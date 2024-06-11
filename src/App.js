@@ -12,6 +12,7 @@ import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
 import InputWrapper from './components/input/InputWrapper';
 import NavBarWrapper from './components/navbar/NavBarWrapper';
 import RatingWrapper from './components/rating/RatingWrapper';
+import CartControlWrapper from './components/cartControl/CartControlWrapper';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/avatar' element={<AvatarWrapper />} />
         <Route path='/blogCard' element={<BlogCardWrapper />} />
         <Route path='/button' element={<ButtonWrapper />} />
+        <Route path='/cartControl' element={<CartControlWrapper />} />
         <Route path='/chip' element={<ChipWrapper />} />
         <Route path='/input' element={<InputWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
