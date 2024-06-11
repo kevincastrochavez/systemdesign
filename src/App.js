@@ -11,6 +11,7 @@ import ActionIconWrapper from './components/actionIcon/ActionIconWrapper';
 import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
 import InputWrapper from './components/input/InputWrapper';
 import NavBarWrapper from './components/navbar/NavBarWrapper';
+import RatingWrapper from './components/rating/RatingWrapper';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/navBar' element={<NavBarWrapper />} />
         <Route path='/profileCard' element={<ProfileCardWrapper />} />
         <Route path='/socialBar' element={<SocialBarWrapper />} />
+        <Route path='/rating' element={<RatingWrapper />} />
         <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
       </Routes>
     </BrowserRouter>
