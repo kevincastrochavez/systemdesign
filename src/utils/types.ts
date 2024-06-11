@@ -120,6 +120,21 @@ export interface ButtonProps {
   icon?: ReactNode;
 }
 
+export interface CartControlProps {
+  /**
+   * Radius of the control
+   */
+  radius?: string;
+  /**
+   * Min value of the control
+   */
+  minValue?: number;
+  /**
+   * Max value of the control
+   */
+  maxValue?: number;
+}
+
 export interface ChipProps {
   /**
    * Text to be displayed
