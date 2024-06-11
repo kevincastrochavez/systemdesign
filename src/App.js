@@ -10,6 +10,7 @@ import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
 import ActionIconWrapper from './components/actionIcon/ActionIconWrapper';
 import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
 import InputWrapper from './components/input/InputWrapper';
+import NavBarWrapper from './components/navbar/NavBarWrapper';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/chip' element={<ChipWrapper />} />
         <Route path='/input' element={<InputWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
+        <Route path='/navBar' element={<NavBarWrapper />} />
         <Route path='/profileCard' element={<ProfileCardWrapper />} />
         <Route path='/socialBar' element={<SocialBarWrapper />} />
         <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
