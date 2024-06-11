@@ -216,6 +216,17 @@ export interface ProfileCardProps {
   socialBar?: SocialBarProps;
 }
 
+export interface RatingProps {
+  /**
+   * Rating value
+   * */
+  rating: number;
+  /**
+   * Size of the stars
+   * */
+  size?: string;
+}
+
 export interface SocialBarProps {
   /**
    * Action icons to be displayed

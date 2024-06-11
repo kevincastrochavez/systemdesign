@@ -78,6 +78,10 @@ const moreButtonProps = {
   icon: <IconArrowRight />,
 };
 
+const ratingProps = {
+  rating: 3.5,
+};
+
 const profileCardProps = {
   image: {
     src: picture,
@@ -214,6 +218,7 @@ export {
   chipProps,
   inputTextProps,
   moreButtonProps,
+  ratingProps,
   profileCardProps,
   socialBarProps,
   testimonialCardProps,
