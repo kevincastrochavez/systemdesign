@@ -231,6 +231,29 @@ export interface ProductOptionProps {
   color?: string;
 }
 
+export interface ProductOptionsProps {
+  /**
+   * Name of the option group
+   */
+  optionName: string;
+  /**
+   * Object of options
+   */
+  optionsObj: ProductOptionProps[];
+  /**
+   * Space of the options
+   */
+  space?: string;
+  /**
+   * Orientation of the options
+   */
+  orientation?: string;
+  /**
+   * Color of the options
+   */
+  color?: string;
+}
+
 export interface ProfileCardProps {
   /**
    * Image source and alt text
