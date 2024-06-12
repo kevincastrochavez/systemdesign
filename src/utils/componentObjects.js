@@ -106,6 +106,11 @@ const ratingProps = {
   rating: 3.5,
 };
 
+const priceProps = {
+  originalPrice: 95,
+  discountedPrice: 76,
+};
+
 const productOptionsProps = {
   optionName: 'Size',
   optionsObj: [
@@ -272,6 +277,7 @@ export {
   inputTextProps,
   moreButtonProps,
   ratingProps,
+  priceProps,
   productOptionsProps,
   profileCardProps,
   socialBarProps,
