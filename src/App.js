@@ -10,6 +10,7 @@ import ColorSwatchesWrapper from './components/colorSwatches/ColorSwatchesWrappe
 import InputWrapper from './components/input/InputWrapper';
 import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
 import NavBarWrapper from './components/navbar/NavBarWrapper';
+import PriceWrapper from './components/price/PriceWrapper';
 import ProductOptionsWrapper from './components/productOptions/ProductOptionsWrapper';
 import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
 import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
@@ -30,6 +31,7 @@ function App() {
         <Route path='/input' element={<InputWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
         <Route path='/navBar' element={<NavBarWrapper />} />
+        <Route path='/price' element={<PriceWrapper />} />
         <Route path='/productOptions' element={<ProductOptionsWrapper />} />
         <Route path='/profileCard' element={<ProfileCardWrapper />} />
         <Route path='/socialBar' element={<SocialBarWrapper />} />
