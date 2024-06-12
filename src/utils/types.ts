@@ -204,6 +204,33 @@ export interface MoreButtonProps {
   color?: string;
 }
 
+export interface ProductOptionProps {
+  /**
+   * Name of the option
+   */
+  name: string;
+  /**
+   * Whether the option is out of stock
+   */
+  outOfStock?: boolean;
+  /**
+   * Function to be called when the option is selected
+   */
+  setOptionSelected: (index: number) => void;
+  /**
+   * Index of the option
+   */
+  index: number;
+  /**
+   * Whether the option is selected
+   */
+  selected: boolean;
+  /**
+   * Color of the option
+   */
+  color?: string;
+}
+
 export interface ProfileCardProps {
   /**
    * Image source and alt text
