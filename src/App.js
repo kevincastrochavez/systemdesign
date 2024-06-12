@@ -1,18 +1,19 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
-import TestimonialCardWrapper from './components/testimonialCard/TestimonialCardWrapper';
-import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
-import ChipWrapper from './components/chip/ChipWrapper';
-import BlogCardWrapper from './components/blogCard/BlogCardWrapper';
-import AvatarWrapper from './components/avatar/AvatarWrapper';
-import ButtonWrapper from './components/button/ButtonWrapper';
-import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
 import ActionIconWrapper from './components/actionIcon/ActionIconWrapper';
-import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
-import InputWrapper from './components/input/InputWrapper';
-import NavBarWrapper from './components/navbar/NavBarWrapper';
-import RatingWrapper from './components/rating/RatingWrapper';
+import AvatarWrapper from './components/avatar/AvatarWrapper';
+import BlogCardWrapper from './components/blogCard/BlogCardWrapper';
+import ButtonWrapper from './components/button/ButtonWrapper';
 import CartControlWrapper from './components/cartControl/CartControlWrapper';
+import ChipWrapper from './components/chip/ChipWrapper';
+import InputWrapper from './components/input/InputWrapper';
+import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
+import NavBarWrapper from './components/navbar/NavBarWrapper';
+import ProductOptionsWrapper from './components/productOptions/ProductOptionsWrapper';
+import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
+import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
+import RatingWrapper from './components/rating/RatingWrapper';
+import TestimonialCardWrapper from './components/testimonialCard/TestimonialCardWrapper';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/input' element={<InputWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
         <Route path='/navBar' element={<NavBarWrapper />} />
+        <Route path='/productOptions' element={<ProductOptionsWrapper />} />
         <Route path='/profileCard' element={<ProfileCardWrapper />} />
         <Route path='/socialBar' element={<SocialBarWrapper />} />
         <Route path='/rating' element={<RatingWrapper />} />
