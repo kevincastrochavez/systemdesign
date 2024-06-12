@@ -146,6 +146,33 @@ export interface ChipProps {
   color?: string;
 }
 
+export interface ColorSwatchProps {
+  /**
+   * Color to be displayed
+   */
+  color: string;
+  /**
+   * Shape of the swatches
+   */
+  shape?: string;
+  /**
+   * Whether the color is out of stock
+   */
+  outOfStock?: boolean;
+  /**
+   * Function to be called when the option is selected
+   */
+  setOptionSelected: (index: number) => void;
+  /**
+   * Index of the option
+   */
+  index: number;
+  /**
+   * Whether the option is selected
+   */
+  selected: boolean;
+}
+
 export interface InputProps {
   /**
    * Text to be displayed in the label
