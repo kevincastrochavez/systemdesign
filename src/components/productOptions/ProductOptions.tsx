@@ -41,7 +41,7 @@ function ProductOptions({
 }: ProductOptionsProps) {
   const [optionSelected, setOptionSelected] = useState<number | null>(null);
 
-  const filteredOptions = optionsObj.filter(Boolean);
+  const filteredOptions = optionsObj?.filter(Boolean);
 
   return (
     <div
