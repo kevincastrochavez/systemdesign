@@ -63,6 +63,30 @@ const chipProps = {
   text: 'Interior',
 };
 
+const colorSwatchesProps = {
+  colorsObj: [
+    {
+      color: 'cyan',
+      outOfStock: false,
+    },
+    {
+      color: 'indigo',
+      outOfStock: true,
+    },
+    {
+      color: 'green',
+      outOfStock: false,
+    },
+    {
+      color: 'orange',
+      outOfStock: false,
+    },
+  ],
+  space: 'sm',
+  orientation: 'horizontal',
+  shape: 'rounded',
+};
+
 const inputTextProps = {
   labelText: 'Email',
   leftIcon: <IconMail />,
@@ -80,6 +104,34 @@ const moreButtonProps = {
 
 const ratingProps = {
   rating: 3.5,
+};
+
+const productOptionsProps = {
+  optionName: 'Size',
+  optionsObj: [
+    {
+      name: 'XS',
+      outOfStock: false,
+    },
+    {
+      name: 'S',
+      outOfStock: true,
+    },
+    {
+      name: 'M',
+      outOfStock: false,
+    },
+    {
+      name: 'L',
+      outOfStock: false,
+    },
+    {
+      name: 'XL',
+      outOfStock: false,
+    },
+  ],
+  space: 'sm',
+  orientation: 'horizontal',
 };
 
 const profileCardProps = {
@@ -216,9 +268,11 @@ export {
   blogCardProps,
   buttonProps,
   chipProps,
+  colorSwatchesProps,
   inputTextProps,
   moreButtonProps,
   ratingProps,
+  productOptionsProps,
   profileCardProps,
   socialBarProps,
   testimonialCardProps,
