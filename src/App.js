@@ -6,6 +6,7 @@ import BlogCardWrapper from './components/blogCard/BlogCardWrapper';
 import ButtonWrapper from './components/button/ButtonWrapper';
 import CartControlWrapper from './components/cartControl/CartControlWrapper';
 import ChipWrapper from './components/chip/ChipWrapper';
+import ColorSwatchesWrapper from './components/colorSwatches/ColorSwatchesWrapper';
 import InputWrapper from './components/input/InputWrapper';
 import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
 import NavBarWrapper from './components/navbar/NavBarWrapper';
@@ -25,6 +26,7 @@ function App() {
         <Route path='/button' element={<ButtonWrapper />} />
         <Route path='/cartControl' element={<CartControlWrapper />} />
         <Route path='/chip' element={<ChipWrapper />} />
+        <Route path='/colorSwatches' element={<ColorSwatchesWrapper />} />
         <Route path='/input' element={<InputWrapper />} />
         <Route path='/moreButton' element={<MoreButtonWrapper />} />
         <Route path='/navBar' element={<NavBarWrapper />} />
