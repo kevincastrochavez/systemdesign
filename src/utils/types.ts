@@ -250,6 +250,17 @@ export interface MoreButtonProps {
   color?: string;
 }
 
+export interface PriceProps {
+  /**
+   * Price to be displayed
+   */
+  originalPrice: number;
+  /**
+   * Discounted price to be displayed
+   */
+  discountedPrice?: number;
+}
+
 export interface ProductOptionProps {
   /**
    * Name of the option
