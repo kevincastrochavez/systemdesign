@@ -29,6 +29,7 @@ const COLORS = {
   neutral50: '#fafafa',
   neutral100: '#f5f5f5',
   neutral200: '#e5e5e5',
+  neutral300: '#d4d4d4',
   neutral500: '#737373',
   neutral600: '#525252',
   inputFocus: '#444CE7',
