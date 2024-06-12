@@ -11,7 +11,7 @@ import {
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
+  title: 'Components/Buttons/Button',
   component: Button,
   argTypes: {
     iconPosition: {

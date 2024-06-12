@@ -10,7 +10,7 @@ import {
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof MoreButton> = {
-  title: 'Components/MoreButton',
+  title: 'Components/Buttons/MoreButton',
   component: MoreButton,
   decorators: [withRouter],
   argTypes: {
