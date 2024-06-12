@@ -173,6 +173,25 @@ export interface ColorSwatchProps {
   selected: boolean;
 }
 
+export interface ColorSwatchesProps {
+  /**
+   * Colors to be displayed and if stocked
+   */
+  colorsObj?: ColorSwatchProps[];
+  /**
+   * Space between the colors
+   */
+  space?: string;
+  /**
+   * Shape of the swatches
+   */
+  shape?: string;
+  /**
+   * Orientation of the colors
+   */
+  orientation?: string;
+}
+
 export interface InputProps {
   /**
    * Text to be displayed in the label
