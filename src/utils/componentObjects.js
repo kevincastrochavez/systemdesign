@@ -11,6 +11,17 @@ import picture from '../assets/kevin.jpg';
 import homePicture from '../assets/home.jpg';
 import navBarLogo from '../assets/Logo.png';
 
+const accordionProps = {
+  title: 'Features',
+  content: [
+    'Designed for comfort and durability.',
+    'Soft, breathable fabric ideal for travel and adventure.',
+    'Large front pocket and adjustable hood.',
+    'Stylish design and premium materials.',
+    'Minimalist design pairs well with any style.',
+  ],
+};
+
 const actionIconProps = {
   variant: 'filled',
   color: 'cyan',
@@ -268,6 +279,7 @@ const navBarProps = {
 };
 
 export {
+  accordionProps,
   actionIconProps,
   avatarProps,
   blogCardProps,

@@ -1,5 +1,16 @@
 import { ReactNode } from 'react';
 
+export interface AccordionProps {
+  /**
+   * Title of the accordion
+   */
+  title: string;
+  /**
+   * Content of the accordion to be displayed
+   */
+  content: string[];
+}
+
 export interface ActionIconProps {
   /**
    * Icon to be displayed
