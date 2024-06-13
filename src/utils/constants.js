@@ -1,6 +1,7 @@
 const COLORS = {
   secondaryText: '#525252',
   disabledText: '#A3A3A3',
+  divider: '#e6e6e6',
   grayBackground: '#858e96',
   grayBackgroundDisabled: '#e5e7eb',
   grayHover: '#f8f9fa',
@@ -30,6 +31,7 @@ const COLORS = {
   neutral100: '#f5f5f5',
   neutral200: '#e5e5e5',
   neutral300: '#d4d4d4',
+  neutral400: '#a3a3a3',
   neutral500: '#737373',
   neutral600: '#525252',
   inputFocus: '#444CE7',
