@@ -203,6 +203,18 @@ export interface ColorSwatchesProps {
   orientation?: string;
 }
 
+export interface GalleryProps {
+  /**
+   * Images to be displayed
+   */
+  images: [
+    {
+      src: string;
+      alt: string;
+    },
+  ];
+}
+
 export interface InputProps {
   /**
    * Text to be displayed in the label

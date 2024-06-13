@@ -10,6 +10,10 @@ import {
 import picture from '../assets/kevin.jpg';
 import homePicture from '../assets/home.jpg';
 import navBarLogo from '../assets/Logo.png';
+import hoddieMain from '../assets/hoddieMain.jpg';
+import hoddieOne from '../assets/hoddieOne.jpg';
+import hoddieTwo from '../assets/hoddieTwo.jpg';
+import hoddieThree from '../assets/hoddieThree.jpg';
 
 const accordionProps = {
   title: 'Features',
@@ -96,6 +100,27 @@ const colorSwatchesProps = {
   space: 'sm',
   orientation: 'horizontal',
   shape: 'rounded',
+};
+
+const galleryProps = {
+  images: [
+    {
+      src: hoddieMain,
+      alt: 'Hoddie Main',
+    },
+    {
+      src: hoddieTwo,
+      alt: 'Hoddie Two',
+    },
+    {
+      src: hoddieOne,
+      alt: 'Hoddie One',
+    },
+    {
+      src: hoddieThree,
+      alt: 'Hoddie Three',
+    },
+  ],
 };
 
 const inputTextProps = {
@@ -286,6 +311,7 @@ export {
   buttonProps,
   chipProps,
   colorSwatchesProps,
+  galleryProps,
   inputTextProps,
   moreButtonProps,
   ratingProps,
