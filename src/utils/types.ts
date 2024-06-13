@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ComponentType, ReactNode } from 'react';
 
 export interface AccordionProps {
   /**
@@ -332,6 +332,21 @@ export interface ProductOptionsProps {
    * Color of the options
    */
   color?: string;
+}
+
+export interface ProductSectionProps {
+  /**
+   * Title of the section
+   */
+  title: string;
+  /**
+   * Component to be displayed
+   */
+  productComponent: ComponentType<any>;
+  /**
+   * Object of options or component passed
+   */
+  productOptions: any;
 }
 
 export interface ProfileCardProps {

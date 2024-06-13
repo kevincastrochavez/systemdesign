@@ -14,6 +14,7 @@ import hoddieMain from '../assets/hoddieMain.jpg';
 import hoddieOne from '../assets/hoddieOne.jpg';
 import hoddieTwo from '../assets/hoddieTwo.jpg';
 import hoddieThree from '../assets/hoddieThree.jpg';
+import ProductOptions from '../components/productOptions/ProductOptions';
 
 const accordionProps = {
   title: 'Features',
@@ -175,6 +176,38 @@ const productOptionsProps = {
   orientation: 'horizontal',
 };
 
+const productSectionProps = {
+  title: 'Available Sizes',
+  productComponent: ProductOptions,
+  productOptions: {
+    optionName: 'Size',
+    optionsObj: [
+      {
+        name: 'XS',
+        outOfStock: false,
+      },
+      {
+        name: 'S',
+        outOfStock: true,
+      },
+      {
+        name: 'M',
+        outOfStock: false,
+      },
+      {
+        name: 'L',
+        outOfStock: false,
+      },
+      {
+        name: 'XL',
+        outOfStock: false,
+      },
+    ],
+    space: 'sm',
+    orientation: 'horizontal',
+  },
+};
+
 const profileCardProps = {
   image: {
     src: picture,
@@ -317,6 +350,7 @@ export {
   ratingProps,
   priceProps,
   productOptionsProps,
+  productSectionProps,
   profileCardProps,
   socialBarProps,
   testimonialCardProps,
