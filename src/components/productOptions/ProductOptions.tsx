@@ -8,6 +8,7 @@ import { ProductOptionProps, ProductOptionsProps } from '../../utils/types';
 const productOptionsContainerCss = css`
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 
   &[data-space='md'] {
     gap: 16px;
