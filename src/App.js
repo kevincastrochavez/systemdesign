@@ -1,5 +1,6 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
+import AccordionWrapper from './components/accordion/AccordionWrapper';
 import ActionIconWrapper from './components/actionIcon/ActionIconWrapper';
 import AvatarWrapper from './components/avatar/AvatarWrapper';
 import BlogCardWrapper from './components/blogCard/BlogCardWrapper';
@@ -21,6 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/accordion' element={<AccordionWrapper />} />
         <Route path='/actionIcon' element={<ActionIconWrapper />} />
         <Route path='/avatar' element={<AvatarWrapper />} />
         <Route path='/blogCard' element={<BlogCardWrapper />} />
