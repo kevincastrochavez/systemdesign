@@ -9,6 +9,7 @@ import ButtonWrapper from './components/button/ButtonWrapper';
 import CartControlWrapper from './components/cartControl/CartControlWrapper';
 import ChipWrapper from './components/chip/ChipWrapper';
 import ColorSwatchesWrapper from './components/colorSwatches/ColorSwatchesWrapper';
+import EmptyStateWrapper from './components/emptyState/EmptyStateWrapper';
 import GalleryWrapper from './components/gallery/GalleryWrapper';
 import IconWrapper from './components/icon/IconWrapper';
 import InputWrapper from './components/input/InputWrapper';
@@ -38,6 +39,7 @@ function App() {
           <Route path='/cartControl' element={<CartControlWrapper />} />
           <Route path='/chip' element={<ChipWrapper />} />
           <Route path='/colorSwatches' element={<ColorSwatchesWrapper />} />
+          <Route path='/emptyState' element={<EmptyStateWrapper />} />
           <Route path='/gallery' element={<GalleryWrapper />} />
           <Route path='/icon' element={<IconWrapper />} />
           <Route path='/input' element={<InputWrapper />} />
