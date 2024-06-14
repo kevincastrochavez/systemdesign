@@ -126,6 +126,14 @@ const galleryProps = {
   ],
 };
 
+const iconProps = {
+  color: 'cyan',
+  size: 'lg',
+  shadow: true,
+  shape: 'rounded',
+  icon: <IconBrandGithub />,
+};
+
 const inputTextProps = {
   labelText: 'Email',
   leftIcon: <IconMail />,
@@ -487,6 +495,7 @@ export {
   chipProps,
   colorSwatchesProps,
   galleryProps,
+  iconProps,
   inputTextProps,
   moreButtonProps,
   ratingProps,

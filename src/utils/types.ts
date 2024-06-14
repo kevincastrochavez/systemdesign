@@ -215,6 +215,29 @@ export interface GalleryProps {
   ];
 }
 
+export interface IconProps {
+  /**
+   * Color of the icon
+   */
+  color?: string;
+  /**
+   * Size of the icon
+   */
+  size?: string;
+  /**
+   * Shadow of the icon
+   */
+  shadow?: boolean;
+  /**
+   * Shape of the icon
+   */
+  shape?: string;
+  /**
+   * Icon to be displayed
+   */
+  icon: ReactNode;
+}
+
 export interface InputProps {
   /**
    * Text to be displayed in the label
