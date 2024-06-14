@@ -5,6 +5,7 @@ import { ChipProps } from '../../utils/types';
 import { COLORS } from '../../utils/constants';
 
 const chipContainerCss = css`
+  width: fit-content;
   padding: 2px 8px;
   font-size: 14px;
   line-height: 20px;
