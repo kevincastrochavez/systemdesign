@@ -284,6 +284,54 @@ export interface PriceProps {
   discountedPrice?: number;
 }
 
+export interface ProductDetailsProps {
+  /**
+   * Images of the product
+   */
+  images: [
+    {
+      src: string;
+      alt: string;
+    },
+  ];
+  /**
+   * Title of the product
+   */
+  title: string;
+  /**
+   * Price of the product
+   */
+  price: PriceProps;
+  /**
+   * Discount badge of the product
+   */
+  discountBadge: ChipProps;
+  /**
+   * Rating of the product
+   */
+  ratingObj: RatingProps;
+  /**
+   * Link to all reviews of the product
+   */
+  link: MoreButtonProps;
+  /**
+   * Description of the product
+   */
+  description: string;
+  /**
+   * Sections of the product
+   */
+  productSections: ProductOptionsProps[];
+  /**
+   * Button of the product
+   */
+  button: ButtonProps;
+  /**
+   * Features of the product
+   * */
+  accordionFeatures: AccordionProps[];
+}
+
 export interface ProductOptionProps {
   /**
    * Name of the option

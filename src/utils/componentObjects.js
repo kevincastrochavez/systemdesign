@@ -15,6 +15,8 @@ import hoddieOne from '../assets/hoddieOne.jpg';
 import hoddieTwo from '../assets/hoddieTwo.jpg';
 import hoddieThree from '../assets/hoddieThree.jpg';
 import ProductOptions from '../components/productOptions/ProductOptions';
+import ColorSwatches from '../components/colorSwatches/ColorSwatches';
+import CartControl from '../components/cartControl/CartControl';
 
 const accordionProps = {
   title: 'Features',
@@ -139,13 +141,149 @@ const moreButtonProps = {
   icon: <IconArrowRight />,
 };
 
-const ratingProps = {
-  rating: 3.5,
-};
-
 const priceProps = {
   originalPrice: 95,
   discountedPrice: 76,
+};
+
+const productDetailsProps = {
+  images: [
+    {
+      src: hoddieMain,
+      alt: 'Hoddie Main',
+    },
+    {
+      src: hoddieTwo,
+      alt: 'Hoddie Two',
+    },
+    {
+      src: hoddieOne,
+      alt: 'Hoddie One',
+    },
+    {
+      src: hoddieThree,
+      alt: 'Hoddie Three',
+    },
+  ],
+  title: 'Voyager Hoodie',
+  price: {
+    originalPrice: 95,
+    discountedPrice: 76,
+  },
+  discountBadge: {
+    text: '20% OFF',
+    color: 'orange',
+  },
+  ratingObj: {
+    rating: 4.5,
+  },
+  link: {
+    to: '/someLink',
+    text: 'See all 62 reviews',
+    color: 'indigo',
+  },
+  description:
+    'The Voyager Hoodie is for the explorer at heart. Its durable fabric and roomy pockets are perfect for those who are always searching for the next adventure.',
+  productSections: [
+    {
+      title: 'Available Colors',
+      productComponent: ColorSwatches,
+      productOptions: {
+        colorsObj: [
+          {
+            color: 'cyan',
+            outOfStock: false,
+          },
+          {
+            color: 'indigo',
+            outOfStock: false,
+          },
+          {
+            color: 'green',
+            outOfStock: false,
+          },
+          {
+            color: 'orange',
+            outOfStock: false,
+          },
+        ],
+        space: 'sm',
+        orientation: 'horizontal',
+        shape: 'rounded',
+      },
+    },
+    {
+      title: 'Available Sizes',
+      productComponent: ProductOptions,
+      productOptions: {
+        optionName: 'Size',
+        optionsObj: [
+          {
+            name: 'XS',
+            outOfStock: false,
+          },
+          {
+            name: 'S',
+            outOfStock: false,
+          },
+          {
+            name: 'M',
+            outOfStock: false,
+          },
+          {
+            name: 'L',
+            outOfStock: false,
+          },
+          {
+            name: 'XL',
+            outOfStock: false,
+          },
+        ],
+        space: 'sm',
+        orientation: 'horizontal',
+      },
+    },
+
+    {
+      title: 'Quantity',
+      productComponent: CartControl,
+      productOptions: {},
+    },
+  ],
+  button: {
+    onclick: () => {},
+    text: 'Add to Cart',
+    width: 'full',
+  },
+  accordionFeatures: [
+    {
+      title: 'Features',
+      content: [
+        'Designed for comfort and durability.',
+        'Soft, breathable fabric ideal for travel and adventure.',
+        'Large front pocket and adjustable hood.',
+        'Stylish design and premium materials.',
+        'Minimalist design pairs well with any style.',
+      ],
+    },
+    {
+      title: 'Fabric & Care',
+      content: [
+        'Machine wash cold on a gentle cycle.',
+        'Tumble dry low or hang to dry.',
+        'Do not use fabric softeners or bleach.',
+        'Iron on a low setting if necessary.',
+      ],
+    },
+    {
+      title: 'Shipping',
+      content: [
+        'Free standard shipping on all orders - no minimum spend required.',
+        'Expedited shipping available at an additional cost.',
+        'Packaged in biodegradable materials to reduce environmental impact.',
+      ],
+    },
+  ],
 };
 
 const productOptionsProps = {
@@ -243,6 +381,10 @@ const profileCardProps = {
       },
     ],
   },
+};
+
+const ratingProps = {
+  rating: 3.5,
 };
 
 const socialBarProps = {
@@ -349,6 +491,7 @@ export {
   moreButtonProps,
   ratingProps,
   priceProps,
+  productDetailsProps,
   productOptionsProps,
   productSectionProps,
   profileCardProps,
