@@ -9,7 +9,7 @@ import { COLORS } from '../../utils/constants';
 
 const galleryContainerCss = css`
   width: 100%;
-  max-width: 700px;
+  max-width: 768px;
   overflow: hidden;
 
   & > img {
