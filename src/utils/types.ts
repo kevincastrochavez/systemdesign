@@ -203,6 +203,21 @@ export interface ColorSwatchesProps {
   orientation?: string;
 }
 
+export interface EmptyStateProps {
+  /**
+   * Title of the empty state
+   */
+  title: string;
+  /**
+   * Description of the empty state
+   */
+  description: string;
+  /**
+   * Icon object to be displayed
+   */
+  iconObj?: IconProps;
+}
+
 export interface GalleryProps {
   /**
    * Images to be displayed

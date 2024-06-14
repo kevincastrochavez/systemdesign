@@ -5,6 +5,7 @@ import {
   IconBrandInstagram,
   IconBrandX,
   IconMail,
+  IconMessage,
 } from '@tabler/icons-react';
 
 import picture from '../assets/kevin.jpg';
@@ -103,6 +104,18 @@ const colorSwatchesProps = {
   space: 'sm',
   orientation: 'horizontal',
   shape: 'rounded',
+};
+
+const emptyStateProps = {
+  title: 'No reviews yet!',
+  description: 'Be the first to review this product',
+  iconObj: {
+    color: 'cyan',
+    size: 'md',
+    shadow: true,
+    shape: 'rounded',
+    icon: <IconMessage />,
+  },
 };
 
 const galleryProps = {
@@ -494,6 +507,7 @@ export {
   buttonProps,
   chipProps,
   colorSwatchesProps,
+  emptyStateProps,
   galleryProps,
   iconProps,
   inputTextProps,
