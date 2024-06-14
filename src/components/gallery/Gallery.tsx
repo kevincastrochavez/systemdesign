@@ -49,6 +49,12 @@ const thumbnailContainerCss = css`
   }
 `;
 
+/**
+ * Gallery component
+ * @param {Array} images - array of images to be displayed
+ * @returns {JSX.Element}
+ */
+/** Primary UI component for the Gallery component */
 function Gallery({ images }: GalleryProps) {
   const [picturedShown, setPicturedShown] = useState(0);
   const mainImage = images[picturedShown];

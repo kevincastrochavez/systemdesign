@@ -58,6 +58,13 @@ const accordionDividerCss = css`
   margin-bottom: 12px;
 `;
 
+/**
+ * Accordion component
+ * @param {String} title - title of the accordion
+ * @param {JSX.Element} content - content of the accordion
+ * @returns {JSX.Element}
+ */
+/** Primary UI component for the Accordion component */
 function Accordion({ title, content }: AccordionProps) {
   const [expanded, setExpanded] = useState(true);
 

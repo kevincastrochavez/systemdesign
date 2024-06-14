@@ -91,6 +91,21 @@ const productOptionsContainerCss = css`
   gap: 32px;
 `;
 
+/**
+ * ProductDetails component
+ * @param {Array} images - images to be displayed
+ * @param {String} title - title of the product
+ * @param {Object} price - price of the product
+ * @param {Object} discountBadge - discount badge
+ * @param {Object} ratingObj - rating object
+ * @param {Object} link - link object
+ * @param {String} description - description of the product
+ * @param {Array} productSections - product sections
+ * @param {Object} button - button object
+ * @param {Array} accordionFeatures - accordion features
+ * @returns {JSX.Element}
+ */
+/** Primary UI component for the ProductDetails component */
 function ProductDetails({
   images,
   title,
