@@ -1,4 +1,5 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 import AccordionWrapper from './components/accordion/AccordionWrapper';
 import ActionIconWrapper from './components/actionIcon/ActionIconWrapper';
@@ -23,30 +24,34 @@ import TestimonialCardWrapper from './components/testimonialCard/TestimonialCard
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/accordion' element={<AccordionWrapper />} />
-        <Route path='/actionIcon' element={<ActionIconWrapper />} />
-        <Route path='/avatar' element={<AvatarWrapper />} />
-        <Route path='/blogCard' element={<BlogCardWrapper />} />
-        <Route path='/button' element={<ButtonWrapper />} />
-        <Route path='/cartControl' element={<CartControlWrapper />} />
-        <Route path='/chip' element={<ChipWrapper />} />
-        <Route path='/colorSwatches' element={<ColorSwatchesWrapper />} />
-        <Route path='/gallery' element={<GalleryWrapper />} />
-        <Route path='/input' element={<InputWrapper />} />
-        <Route path='/moreButton' element={<MoreButtonWrapper />} />
-        <Route path='/navBar' element={<NavBarWrapper />} />
-        <Route path='/price' element={<PriceWrapper />} />
-        <Route path='/productDetails' element={<ProductDetailsWrapper />} />
-        <Route path='/productOptions' element={<ProductOptionsWrapper />} />
-        <Route path='/productSection' element={<ProductSectionWrapper />} />
-        <Route path='/profileCard' element={<ProfileCardWrapper />} />
-        <Route path='/socialBar' element={<SocialBarWrapper />} />
-        <Route path='/rating' element={<RatingWrapper />} />
-        <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Analytics />
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/accordion' element={<AccordionWrapper />} />
+          <Route path='/actionIcon' element={<ActionIconWrapper />} />
+          <Route path='/avatar' element={<AvatarWrapper />} />
+          <Route path='/blogCard' element={<BlogCardWrapper />} />
+          <Route path='/button' element={<ButtonWrapper />} />
+          <Route path='/cartControl' element={<CartControlWrapper />} />
+          <Route path='/chip' element={<ChipWrapper />} />
+          <Route path='/colorSwatches' element={<ColorSwatchesWrapper />} />
+          <Route path='/gallery' element={<GalleryWrapper />} />
+          <Route path='/input' element={<InputWrapper />} />
+          <Route path='/moreButton' element={<MoreButtonWrapper />} />
+          <Route path='/navBar' element={<NavBarWrapper />} />
+          <Route path='/price' element={<PriceWrapper />} />
+          <Route path='/productDetails' element={<ProductDetailsWrapper />} />
+          <Route path='/productOptions' element={<ProductOptionsWrapper />} />
+          <Route path='/productSection' element={<ProductSectionWrapper />} />
+          <Route path='/profileCard' element={<ProfileCardWrapper />} />
+          <Route path='/socialBar' element={<SocialBarWrapper />} />
+          <Route path='/rating' element={<RatingWrapper />} />
+          <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
