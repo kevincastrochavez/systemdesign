@@ -15,6 +15,7 @@ const cartControlContainerCss = css`
   padding: 2px 8px;
   border-radius: 6px;
   font-size: 14px;
+  width: fit-content;
 
   &[data-radius='md'] {
     border-radius: 8px;
