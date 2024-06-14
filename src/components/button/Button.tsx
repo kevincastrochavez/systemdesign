@@ -191,7 +191,7 @@ const buttonCss = css`
 
   &[data-width='full'] {
     width: 100%;
-    max-width: 320px;
+    max-width: 768px;
   }
 
   &[disabled] {
