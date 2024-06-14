@@ -59,7 +59,7 @@ const accordionDividerCss = css`
 `;
 
 function Accordion({ title, content }: AccordionProps) {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
 
   return (
     <motion.section
