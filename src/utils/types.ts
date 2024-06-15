@@ -502,6 +502,29 @@ export interface RatingCategoryGroupProps {
   ratingCategories: RatingCategoryProps[];
 }
 
+export interface ReviewProps {
+  /**
+   * Name of the reviewer
+   */
+  name: string;
+  /**
+   * Date of the review
+   */
+  date: string;
+  /**
+   * Rating of the review
+   */
+  rating: number;
+  /**
+   * Text of the review
+   */
+  text: string;
+  /**
+   * Image source and alt text
+   */
+  avatar: AvatarProps;
+}
+
 export interface SocialBarProps {
   /**
    * Action icons to be displayed

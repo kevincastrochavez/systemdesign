@@ -14,6 +14,8 @@ const COLORS = {
   indigo50: '#eef2ff',
   green800: '#166534',
   green700: '#15803D',
+  green600: '#16A34A',
+  green500: '#22C55E',
   green200: '#BBF7D0',
   green100: '##cfce7',
   green50: '#F0FDF4',
@@ -36,6 +38,8 @@ const COLORS = {
   neutral600: '#525252',
   inputFocus: '#444CE7',
   red600: '#dc2626',
+  yellow500: '#EAB308',
+  yellow300: '#FDE047',
 };
 
 export { COLORS };
