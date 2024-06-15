@@ -413,6 +413,14 @@ const ratingProps = {
   rating: 3.5,
 };
 
+const ratingCategoryProps = {
+  name: 'Excellent',
+  progressBar: {
+    value: 70,
+    qualityLevel: 'excellent',
+  },
+};
+
 const socialBarProps = {
   actionIcons: [
     {
@@ -524,6 +532,9 @@ export {
   profileCardProps,
   progressBarProps,
   ratingProps,
+  ratingCategoryProps,
+  ratingCategoryGroupProps,
+  reviewProps,
   socialBarProps,
   testimonialCardProps,
   navBarProps,

@@ -484,6 +484,17 @@ export interface RatingProps {
   size?: string;
 }
 
+export interface RatingCategoryProps {
+  /**
+   * Name of the category
+   */
+  name: string;
+  /**
+   * Progress bar of the category
+   */
+  progressBar: ProgressBarProps;
+}
+
 export interface SocialBarProps {
   /**
    * Action icons to be displayed
