@@ -20,8 +20,9 @@ import ProductDetailsWrapper from './components/productDetails/ProductDetailsWra
 import ProductOptionsWrapper from './components/productOptions/ProductOptionsWrapper';
 import ProductSectionWrapper from './components/productSection/ProductSectionWrapper';
 import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
-import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
+import ProgressBarWrapper from './components/progressBar/ProgressBarWrapper';
 import RatingWrapper from './components/rating/RatingWrapper';
+import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
 import TestimonialCardWrapper from './components/testimonialCard/TestimonialCardWrapper';
 
 function App() {
@@ -50,8 +51,9 @@ function App() {
           <Route path='/productOptions' element={<ProductOptionsWrapper />} />
           <Route path='/productSection' element={<ProductSectionWrapper />} />
           <Route path='/profileCard' element={<ProfileCardWrapper />} />
-          <Route path='/socialBar' element={<SocialBarWrapper />} />
+          <Route path='/progressBar' element={<ProgressBarWrapper />} />
           <Route path='/rating' element={<RatingWrapper />} />
+          <Route path='/socialBar' element={<SocialBarWrapper />} />
           <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
         </Routes>
       </BrowserRouter>
