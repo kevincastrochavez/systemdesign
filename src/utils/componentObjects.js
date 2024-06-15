@@ -404,6 +404,11 @@ const profileCardProps = {
   },
 };
 
+const progressBarProps = {
+  value: 70,
+  qualityLevel: 'excellent',
+};
+
 const ratingProps = {
   rating: 3.5,
 };
@@ -512,12 +517,13 @@ export {
   iconProps,
   inputTextProps,
   moreButtonProps,
-  ratingProps,
   priceProps,
   productDetailsProps,
   productOptionsProps,
   productSectionProps,
   profileCardProps,
+  progressBarProps,
+  ratingProps,
   socialBarProps,
   testimonialCardProps,
   navBarProps,

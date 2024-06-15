@@ -462,6 +462,17 @@ export interface ProfileCardProps {
   socialBar?: SocialBarProps;
 }
 
+export interface ProgressBarProps {
+  /**
+   * Value of the progress bar
+   */
+  value: number;
+  /**
+   * Quality level of the progress bar instance
+   */
+  qualityLevel?: string;
+}
+
 export interface RatingProps {
   /**
    * Rating value
