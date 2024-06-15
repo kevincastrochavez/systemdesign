@@ -495,6 +495,13 @@ export interface RatingCategoryProps {
   progressBar: ProgressBarProps;
 }
 
+export interface RatingCategoryGroupProps {
+  /**
+   * Rating categories
+   */
+  ratingCategories: RatingCategoryProps[];
+}
+
 export interface SocialBarProps {
   /**
    * Action icons to be displayed
