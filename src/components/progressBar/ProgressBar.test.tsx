@@ -1,7 +1,7 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import ProgressBar from './ProgressBar'; // Adjust the import path according to your file structure
+
+import ProgressBar from './ProgressBar';
 import { COLORS } from '../../utils/constants';
 import { ProgressBarProps } from '../../utils/types';
 
