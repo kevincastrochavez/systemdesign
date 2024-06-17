@@ -38,7 +38,7 @@ function RatingCategory({ name, progressBar }: RatingCategoryProps) {
     <div css={ratingCategoryContainerCss}>
       <p>{name}</p>
       <ProgressBar {...progressBar} />
-      <p>{progressBar?.value}%</p>
+      <p>{(progressBar?.value).toFixed(0)}%</p>
     </div>
   );
 }
