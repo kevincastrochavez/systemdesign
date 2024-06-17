@@ -25,6 +25,7 @@ import RatingWrapper from './components/rating/RatingWrapper';
 import RatingCategoryWrapper from './components/ratingCategory/RatingCategoryWrapper';
 import RatingCategoryGroupWrapper from './components/ratingCategoryGroup/RatingCategoryGroupWrapper';
 import ReviewWrapper from './components/review/ReviewWrapper';
+import ReviewSectionWrapper from './components/reviewSection/ReviewSectionWrapper';
 import SocialBarWrapper from './components/socialBar/SocialBarWrapper';
 import TestimonialCardWrapper from './components/testimonialCard/TestimonialCardWrapper';
 
@@ -62,6 +63,7 @@ function App() {
             element={<RatingCategoryGroupWrapper />}
           />
           <Route path='/review' element={<ReviewWrapper />} />
+          <Route path='/reviewSection' element={<ReviewSectionWrapper />} />
           <Route path='/socialBar' element={<SocialBarWrapper />} />
           <Route path='/testimonialCard' element={<TestimonialCardWrapper />} />
         </Routes>
