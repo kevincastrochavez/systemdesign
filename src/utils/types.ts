@@ -525,6 +525,13 @@ export interface ReviewProps {
   avatar: AvatarProps;
 }
 
+export interface ReviewSectionProps {
+  /**
+   * Reviews to be displayed
+   */
+  reviews: ReviewProps[];
+}
+
 export interface SocialBarProps {
   /**
    * Action icons to be displayed
