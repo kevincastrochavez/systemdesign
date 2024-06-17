@@ -6,6 +6,7 @@ import {
   IconBrandX,
   IconMail,
   IconMessage,
+  IconRecycle,
 } from '@tabler/icons-react';
 
 import picture from '../assets/kevin.jpg';
@@ -154,6 +155,14 @@ const inputTextProps = {
   type: 'password',
   pattern: '^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$',
   hint: 'Hint',
+};
+
+const listItemProps = {
+  iconObj: {
+    icon: <IconRecycle />,
+    shadow: true,
+  },
+  text: 'Recycled Materials',
 };
 
 const moreButtonProps = {
@@ -882,6 +891,7 @@ export {
   galleryProps,
   iconProps,
   inputTextProps,
+  listItemProps,
   moreButtonProps,
   priceProps,
   productDetailsProps,

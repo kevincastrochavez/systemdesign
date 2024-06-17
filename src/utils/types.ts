@@ -288,6 +288,17 @@ export interface InputProps {
   disabled?: boolean;
 }
 
+export interface ListItemProps {
+  /**
+   * Icon object to be displayed
+   */
+  iconObj: IconProps;
+  /**
+   * Text to be displayed
+   */
+  text: string;
+}
+
 export interface MoreButtonProps {
   /**
    * Link to be redirected to
