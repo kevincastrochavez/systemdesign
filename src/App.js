@@ -13,6 +13,7 @@ import EmptyStateWrapper from './components/emptyState/EmptyStateWrapper';
 import GalleryWrapper from './components/gallery/GalleryWrapper';
 import IconWrapper from './components/icon/IconWrapper';
 import InputWrapper from './components/input/InputWrapper';
+import ListItemWrapper from './components/listItem/ListItemWrapper';
 import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
 import NavBarWrapper from './components/navbar/NavBarWrapper';
 import PriceWrapper from './components/price/PriceWrapper';
@@ -48,6 +49,7 @@ function App() {
           <Route path='/gallery' element={<GalleryWrapper />} />
           <Route path='/icon' element={<IconWrapper />} />
           <Route path='/input' element={<InputWrapper />} />
+          <Route path='/listItem' element={<ListItemWrapper />} />
           <Route path='/moreButton' element={<MoreButtonWrapper />} />
           <Route path='/navBar' element={<NavBarWrapper />} />
           <Route path='/price' element={<PriceWrapper />} />
