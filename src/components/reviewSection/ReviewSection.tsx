@@ -9,7 +9,7 @@ import RatingCategoryGroup from '../ratingCategoryGroup/RatingCategoryGroup';
 import Button from '../button/Button';
 import Review from '../review/Review';
 import EmptyState from '../emptyState/EmptyState';
-import { ReviewProps, ReviewSectionProps } from '../../utils/types';
+import { ReviewSectionProps } from '../../utils/types';
 
 const reviewSectionContainerCss = css`
   font-family: 'Noto Sans', sans-serif;
