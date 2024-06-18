@@ -6,7 +6,7 @@ import { progressBarDefault } from '../__mocks__/progressBarMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof ProgressBar> = {
-  title: 'Components/ProgressBar',
+  title: 'Components/ReviewSectionGroup/ProgressBar',
   component: ProgressBar,
   argTypes: {
     value: {

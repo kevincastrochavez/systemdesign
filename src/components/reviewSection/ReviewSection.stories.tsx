@@ -9,7 +9,7 @@ import {
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof ReviewSection> = {
-  title: 'Components/ReviewSection',
+  title: 'Components/ReviewSectionGroup/ReviewSection',
   component: ReviewSection,
   argTypes: {},
   parameters: {

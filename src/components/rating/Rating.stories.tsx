@@ -6,7 +6,7 @@ import { ratingDefault } from '../__mocks__/ratingMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof Rating> = {
-  title: 'Components/Rating',
+  title: 'Components/ReviewSectionGroup/Rating',
   component: Rating,
   argTypes: {
     size: {
