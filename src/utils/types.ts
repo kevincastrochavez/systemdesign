@@ -381,6 +381,13 @@ export interface ProductDetailsProps {
   accordionFeatures: AccordionProps[];
 }
 
+export interface ProductInfoProps {
+  /**
+   * Tabs of the product
+   */
+  tabs: TabProps[];
+}
+
 export interface ProductOptionProps {
   /**
    * Name of the option
@@ -564,6 +571,29 @@ export interface SocialBarProps {
    * Separation among the icons
    */
   separation?: string;
+}
+
+export interface TabProps {
+  /**
+   * Name of the tab
+   */
+  name: string;
+  /**
+   * Path of the image
+   */
+  picture: string;
+  /**
+   * Title of the tab section
+   */
+  title: string;
+  /**
+   * Description of the tab section
+   */
+  description: string;
+  /**
+   * List of items to be displayed
+   */
+  items: ListItemProps[];
 }
 
 export interface TestimonialCardProps {

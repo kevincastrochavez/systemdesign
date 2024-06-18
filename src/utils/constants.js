@@ -26,6 +26,7 @@ const COLORS = {
   orange50: '#fff7ed',
   cyan800: '#155e75',
   cyan700: '#0e7490',
+  cyan600: '#0891b2',
   cyan200: '#a5f3fc',
   cyan100: '#cffafe',
   cyan50: '#ecfeff',
