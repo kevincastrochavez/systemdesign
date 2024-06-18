@@ -32,6 +32,7 @@ const productInformationHeaderCss = css`
     cursor: pointer;
     color: ${COLORS.secondaryText};
     transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
 
     &[data-selected='true'] {
       border-bottom: 2px solid ${COLORS.cyan600};
