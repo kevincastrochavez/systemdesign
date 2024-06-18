@@ -21,6 +21,7 @@ import ProductDetailsWrapper from './components/productDetails/ProductDetailsWra
 import ProductInformationWrapper from './components/productInformation/ProductInformationWrapper';
 import ProductOptionsWrapper from './components/productOptions/ProductOptionsWrapper';
 import ProductSectionWrapper from './components/productSection/ProductSectionWrapper';
+import ProductSpecificationsWrapper from './components/productSpecifications/ProductSpecificationsWrapper';
 import ProfileCardWrapper from './components/profileCard/ProfileCardWrapper';
 import ProgressBarWrapper from './components/progressBar/ProgressBarWrapper';
 import RatingWrapper from './components/rating/RatingWrapper';
@@ -61,6 +62,10 @@ function App() {
           />
           <Route path='/productOptions' element={<ProductOptionsWrapper />} />
           <Route path='/productSection' element={<ProductSectionWrapper />} />
+          <Route
+            path='/productSpecifications'
+            element={<ProductSpecificationsWrapper />}
+          />
           <Route path='/profileCard' element={<ProfileCardWrapper />} />
           <Route path='/progressBar' element={<ProgressBarWrapper />} />
           <Route path='/rating' element={<RatingWrapper />} />
