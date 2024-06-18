@@ -457,6 +457,21 @@ export interface ProductSectionProps {
   productOptions: any;
 }
 
+export interface ProductSpecificationsProps {
+  /**
+   * Title of the section
+   */
+  title: string;
+  /**
+   * Description of the section
+   */
+  description: string;
+  /**
+   * Tabs of the product
+   */
+  tabs: TabProps[];
+}
+
 export interface ProfileCardProps {
   /**
    * Image source and alt text
