@@ -6,7 +6,7 @@ import { productInformationDefault } from '../__mocks__/productInformationMocks'
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof ProductInformation> = {
-  title: 'Components/ProductInformation',
+  title: 'Components/ProductSpecificationsGroup/ProductInformation',
   component: ProductInformation,
   argTypes: {},
   parameters: {

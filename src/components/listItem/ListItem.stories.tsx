@@ -6,7 +6,7 @@ import { listItemDefault } from '../__mocks__/listItemMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof ListItem> = {
-  title: 'Components/ListItem',
+  title: 'Components/ProductSpecificationsGroup/ListItem',
   component: ListItem,
   argTypes: {
     space: {
