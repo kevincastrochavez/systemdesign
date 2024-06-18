@@ -8,7 +8,12 @@ import { listItemDefault } from '../__mocks__/listItemMocks';
 const meta: Meta<typeof ListItem> = {
   title: 'Components/ListItem',
   component: ListItem,
-  argTypes: {},
+  argTypes: {
+    space: {
+      options: ['sm', 'md', 'lg'],
+      control: { type: 'select' },
+    },
+  },
   parameters: {
     layout: 'centered',
   },

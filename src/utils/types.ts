@@ -297,6 +297,10 @@ export interface ListItemProps {
    * Text to be displayed
    */
   text: string;
+  /**
+   * Space between icon and text
+   */
+  space?: string;
 }
 
 export interface MoreButtonProps {
