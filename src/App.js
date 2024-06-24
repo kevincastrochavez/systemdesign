@@ -17,6 +17,7 @@ import ListItemWrapper from './components/listItem/ListItemWrapper';
 import MoreButtonWrapper from './components/moreButton/MoreButtonWrapper';
 import NavBarWrapper from './components/navbar/NavBarWrapper';
 import PriceWrapper from './components/price/PriceWrapper';
+import ProductCardWrapper from './components/productCard/ProductCardWrapper';
 import ProductDetailsWrapper from './components/productDetails/ProductDetailsWrapper';
 import ProductInformationWrapper from './components/productInformation/ProductInformationWrapper';
 import ProductOptionsWrapper from './components/productOptions/ProductOptionsWrapper';
@@ -55,6 +56,7 @@ function App() {
           <Route path='/moreButton' element={<MoreButtonWrapper />} />
           <Route path='/navBar' element={<NavBarWrapper />} />
           <Route path='/price' element={<PriceWrapper />} />
+          <Route path='/productCard' element={<ProductCardWrapper />} />
           <Route path='/productDetails' element={<ProductDetailsWrapper />} />
           <Route
             path='/productInformation'
