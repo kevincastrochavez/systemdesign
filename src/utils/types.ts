@@ -337,6 +337,28 @@ export interface PriceProps {
   discountedPrice?: number;
 }
 
+export interface ProductCardProps {
+  /**
+   * Image information of the product
+   */
+  imgInfo: {
+    src: string;
+    alt: string;
+  };
+  /**
+   * Name of the product
+   */
+  name: string;
+  /**
+   * Price of the product
+   */
+  price: PriceProps;
+  /**
+   * Color swatches of the product
+   */
+  colorSwatchesProps: ColorSwatchesProps;
+}
+
 export interface ProductDetailsProps {
   /**
    * Images of the product
