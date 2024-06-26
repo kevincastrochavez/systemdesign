@@ -415,6 +415,13 @@ export interface ProductDetailsProps {
   accordionFeatures: AccordionProps[];
 }
 
+export interface ProductGridProps {
+  /**
+   * Products to be displayed
+   */
+  products: ProductCardProps[];
+}
+
 export interface ProductInfoProps {
   /**
    * Tabs of the product
