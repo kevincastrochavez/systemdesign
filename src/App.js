@@ -19,6 +19,7 @@ import NavBarWrapper from './components/navbar/NavBarWrapper';
 import PriceWrapper from './components/price/PriceWrapper';
 import ProductCardWrapper from './components/productCard/ProductCardWrapper';
 import ProductDetailsWrapper from './components/productDetails/ProductDetailsWrapper';
+import ProductGridWrapper from './components/productGrid/ProductGridWrapper';
 import ProductInformationWrapper from './components/productInformation/ProductInformationWrapper';
 import ProductOptionsWrapper from './components/productOptions/ProductOptionsWrapper';
 import ProductSectionWrapper from './components/productSection/ProductSectionWrapper';
@@ -58,6 +59,7 @@ function App() {
           <Route path='/price' element={<PriceWrapper />} />
           <Route path='/productCard' element={<ProductCardWrapper />} />
           <Route path='/productDetails' element={<ProductDetailsWrapper />} />
+          <Route path='/productGrid' element={<ProductGridWrapper />} />
           <Route
             path='/productInformation'
             element={<ProductInformationWrapper />}
