@@ -37,6 +37,7 @@ const colorSwatchCircleCss = css`
     border-radius: 8px;
   }
 
+  // Colors
   &[data-color='cyan'] {
     background-color: ${COLORS.cyan700};
   }
@@ -53,11 +54,17 @@ const colorSwatchCircleCss = css`
     background-color: ${COLORS.orange700};
   }
 
+  // Selected state
   &[data-selected='true'] {
     width: calc(38px - 2.3px);
     height: calc(38px - 2.3px);
     outline: 2px solid ${COLORS.indigo700};
     outline-offset: 2.3px;
+  }
+
+  &[data-size='sm'] {
+    width: 24px;
+    height: 24px;
   }
 `;
 
@@ -69,6 +76,7 @@ const colorSwatchCircleCss = css`
  * @param {Number} index - index of the swatch
  * @param {Boolean} selected - whether the swatch is selected
  * @param {String} shape - shape of the swatch ('squared' | 'rounded')
+ * @param {String} size - size of the swatch ('sm' | 'lg')
  * @returns {JSX.Element}
  */
 /** Primary UI component for the ColorSwatch component */
@@ -79,6 +87,7 @@ function ColorSwatch({
   setOptionSelected,
   index,
   selected,
+  size,
 }: ColorSwatchProps) {
   return (
     <div
@@ -87,11 +96,15 @@ function ColorSwatch({
       onClick={() => setOptionSelected(index)}
     >
       {selected && !outOfStock && (
-        <IconCheck size={30} color={'white'} data-testid='icon-check' />
+        <IconCheck
+          size={size === 'lg' ? 30 : 20}
+          color={'white'}
+          data-testid='icon-check'
+        />
       )}
       {outOfStock && (
         <IconPointOff
-          size={44}
+          size={size === 'lg' ? 44 : 30}
           color={COLORS.neutral300}
           data-testid='icon-point-off'
         />
@@ -103,6 +116,7 @@ function ColorSwatch({
         data-color={color}
         data-shape={shape}
         data-testid={`color-swatch-${color}`}
+        data-size={size}
       ></span>
     </div>
   );

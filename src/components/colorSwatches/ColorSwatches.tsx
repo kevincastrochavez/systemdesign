@@ -40,6 +40,7 @@ function ColorSwatches({
   space = 'md',
   shape = 'rounded',
   orientation = 'horizontal',
+  size = 'lg',
 }: ColorSwatchesProps) {
   const [optionSelected, setOptionSelected] = useState<number | null>(null);
 
@@ -55,6 +56,7 @@ function ColorSwatches({
       {filteredOptions?.map((color: ColorSwatchProps, index: number) => (
         <ColorSwatch
           key={color.color}
+          size={size}
           {...color}
           setOptionSelected={setOptionSelected}
           shape={shape}

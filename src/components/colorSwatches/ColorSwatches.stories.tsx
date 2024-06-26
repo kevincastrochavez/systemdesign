@@ -25,6 +25,10 @@ const meta: Meta<typeof ColorSwatches> = {
       options: ['horizontal', 'vertical'],
       control: { type: 'select' },
     },
+    size: {
+      options: ['sm', 'lg'],
+      control: { type: 'select' },
+    },
   },
   parameters: {
     layout: 'centered',

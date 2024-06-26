@@ -29,6 +29,10 @@ const meta: Meta<typeof ColorSwatch> = {
     selected: {
       control: { type: 'boolean' },
     },
+    size: {
+      options: ['sm', 'lg'],
+      control: { type: 'select' },
+    },
   },
   parameters: {
     layout: 'centered',

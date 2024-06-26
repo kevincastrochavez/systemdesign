@@ -182,6 +182,10 @@ export interface ColorSwatchProps {
    * Whether the option is selected
    */
   selected: boolean;
+  /**
+   * Size of the swatch
+   */
+  size?: string;
 }
 
 export interface ColorSwatchesProps {
@@ -201,6 +205,10 @@ export interface ColorSwatchesProps {
    * Orientation of the colors
    */
   orientation?: string;
+  /**
+   * Size of the colors
+   */
+  size?: string;
 }
 
 export interface EmptyStateProps {

@@ -225,6 +225,7 @@ const productCardProps = {
       },
     ],
     space: 'sm',
+    size: 'sm',
   },
 };
 
