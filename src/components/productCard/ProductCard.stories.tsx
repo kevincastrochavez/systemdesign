@@ -6,7 +6,7 @@ import { productCardDefault } from '../__mocks__/productCardMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof ProductCard> = {
-  title: 'Components/ProductCardGroup/ProductCard',
+  title: 'Components/ProductGridGroup/ProductCard',
   component: ProductCard,
   argTypes: {},
   parameters: {
