@@ -10,6 +10,7 @@ import CartControlWrapper from './components/cartControl/CartControlWrapper';
 import ChipWrapper from './components/chip/ChipWrapper';
 import ColorSwatchesWrapper from './components/colorSwatches/ColorSwatchesWrapper';
 import EmptyStateWrapper from './components/emptyState/EmptyStateWrapper';
+import FilterCheckboxWrapper from './components/filterCheckbox/FilterCheckboxWrapper';
 import GalleryWrapper from './components/gallery/GalleryWrapper';
 import IconWrapper from './components/icon/IconWrapper';
 import InputWrapper from './components/input/InputWrapper';
@@ -50,6 +51,7 @@ function App() {
           <Route path='/chip' element={<ChipWrapper />} />
           <Route path='/colorSwatches' element={<ColorSwatchesWrapper />} />
           <Route path='/emptyState' element={<EmptyStateWrapper />} />
+          <Route path='/filterCheckbox' element={<FilterCheckboxWrapper />} />
           <Route path='/gallery' element={<GalleryWrapper />} />
           <Route path='/icon' element={<IconWrapper />} />
           <Route path='/input' element={<InputWrapper />} />
