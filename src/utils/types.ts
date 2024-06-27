@@ -226,6 +226,21 @@ export interface EmptyStateProps {
   iconObj?: IconProps;
 }
 
+export interface FilterCheckboxProps {
+  /**
+   * Text to be displayed in the label
+   */
+  labelText: string;
+  /**
+   * Query to be used in the filter
+   */
+  filterQuery: string;
+  /**
+   * Category to be filtered
+   */
+  categoryToFilter: string;
+}
+
 export interface GalleryProps {
   /**
    * Images to be displayed

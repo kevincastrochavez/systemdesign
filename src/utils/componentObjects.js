@@ -138,6 +138,12 @@ const emptyStateProps = {
   },
 };
 
+const filterCheckboxProps = {
+  labelText: 'Latest Arrivals',
+  filterQuery: 'latestArrivals',
+  categoryToFilter: 'collections',
+};
+
 const galleryProps = {
   images: [
     {
@@ -1519,6 +1525,8 @@ export {
   chipProps,
   colorSwatchesProps,
   emptyStateProps,
+  filterCategoryProps,
+  filterCheckboxProps,
   galleryProps,
   iconProps,
   inputTextProps,
