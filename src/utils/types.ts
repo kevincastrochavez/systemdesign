@@ -241,6 +241,21 @@ export interface FilterCheckboxProps {
   categoryToFilter: string;
 }
 
+export interface FilterColorProps {
+  /**
+   * Color to be displayed
+   */
+  color: string;
+  /**
+   * Function to be called when the color is selected
+   */
+  setColorSelected: (color: string) => void;
+  /**
+   * Whether the color is selected
+   */
+  colorSelected: string;
+}
+
 export interface GalleryProps {
   /**
    * Images to be displayed

@@ -144,6 +144,10 @@ const filterCheckboxProps = {
   categoryToFilter: 'collections',
 };
 
+const filterColorProps = {
+  colors: ['cyan', 'indigo', 'green', 'orange'],
+};
+
 const galleryProps = {
   images: [
     {
@@ -1527,6 +1531,7 @@ export {
   emptyStateProps,
   filterCategoryProps,
   filterCheckboxProps,
+  filterColorProps,
   galleryProps,
   iconProps,
   inputTextProps,
