@@ -12,6 +12,7 @@ const config: StorybookConfig = {
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
     'storybook-addon-remix-react-router',
+    'storybook-addon-remix-react-router',
   ],
 
   framework: {
@@ -24,7 +25,7 @@ const config: StorybookConfig = {
   staticDirs: ['../public'],
 
   typescript: {
-    reactDocgen: 'react-docgen-typescript'
-  }
+    reactDocgen: 'react-docgen-typescript',
+  },
 };
 export default config;
