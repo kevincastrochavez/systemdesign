@@ -256,6 +256,13 @@ export interface FilterColorProps {
   colorSelected: string;
 }
 
+export interface FilterColorsProps {
+  /**
+   * Colors to be displayed
+   */
+  colors: string[];
+}
+
 export interface GalleryProps {
   /**
    * Images to be displayed
