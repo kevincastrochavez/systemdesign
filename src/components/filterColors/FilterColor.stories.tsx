@@ -7,7 +7,7 @@ import { filterColorMockDefault } from '../__mocks__/filterColorMocks';
 
 // eslint-disable-next-line storybook/story-exports
 const meta: Meta<typeof FilterColor> = {
-  title: 'Components/FilterColor',
+  title: 'Components/FiltersGroup/FilterColor',
   component: FilterColor,
   decorators: [withRouter],
   argTypes: {
