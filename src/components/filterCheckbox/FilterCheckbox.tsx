@@ -14,7 +14,6 @@ const filterCheckboxContainerCss = css`
   input[type='checkbox'] {
     width: 16px;
     height: 16px;
-    border: 1px solid ${COLORS.grayBorder};
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
